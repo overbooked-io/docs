@@ -10,7 +10,7 @@ In general, there are three status code ranges you can expect:
 
 Below is a list of possible error codes that can be returned, along with an additional description.
 
-| Code | HTTP Status | Description |
+| Code | Status | Description |
 | :--- | :--- | :--- |
 | E001 | 500 | Unknown internal server error |
 | E002 | 404 | Route not found |
