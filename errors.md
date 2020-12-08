@@ -1,7 +1,5 @@
 # Errors
 
-## Error handling
-
 Overbooked API uses [HTTP response status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to indicate the success or failure of your API requests. If your request fails, Overbooked API returns an [error](https://stripe.com/docs/api#errors) using the appropriate status code.
 
 In general, there are three status code ranges you can expect:
@@ -10,20 +8,6 @@ In general, there are three status code ranges you can expect:
 * `4xx` error status codes indicate an error because of the information provided \(e.g., a required parameter was omitted\)
 * `5xx` error status codes are rare and indicate an error with Overbooked’s servers
 
-{% code title="Example error response" %}
-```scheme
-{
-  "error": {
-    "code": "E013",
-    "message": "\"metadata\" is invalid, should be an object",
-    "status": 400
-  }
-}
-```
-{% endcode %}
-
-### Error codes
-
 Below is a list of possible error codes that can be returned, along with an additional description.
 
 | Code | Status | Description |
@@ -31,9 +15,9 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E001 | 500 | Unknown internal server error |
 | E002 | 404 | Route not found |
 | E003 | 400 | Organization not found |
-| E004 | 422 | Invalid role. Should be one of \['admin', 'developer', 'viewer'\] |
+| E004 | 422 | Invalid role. Should be one of ['admin', 'developer', 'viewer'] |
 | E005 | 404 | Member not found |
-| E006 | 422 | Organization plan invalid, should be one of \['standard', 'enterprise'\] |
+| E006 | 422 | Organization plan invalid, should be one of ['standard', 'enterprise'] |
 | E007 | 404 | Environment not found |
 | E008 | 401 | Unauthorized, API Key invalid |
 | E009 | 404 | User with given email not found |
@@ -49,7 +33,7 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E019 | 422 | Organization name cannot include any special characters |
 | E020 | 422 | Credits top up invalid amount |
 | E021 | 422 | Invalid booking block date format. Allowed: YYYY-MM-DD |
-| E022 | 422 | Invalid booking block timezone, should be correct TZ database name, eg. 'America/New\_York' |
+| E022 | 422 | Invalid booking block timezone, should be correct TZ database name, eg. 'America/New_York' |
 | E023 | 422 | Slot's start date should be before end date |
 | E024 | 422 | Slots should not overlap |
 | E025 | 404 | Slot not found |
@@ -85,7 +69,7 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E055 | 401 | Unauthorized, API Key invalid |
 | E056 | 401 | Unauthorized, no API Key provided |
 | E057 | 401 | Unauthorized, no access to given resource |
-| E058 | 422 | The booking\_disabled\_before property should be higher than 0 |
-| E059 | 403 | Slot cannot be unlocked, lock\_key invalid |
+| E058 | 422 | The booking_disabled_before property should be higher than 0 |
+| E059 | 403 | Slot cannot be unlocked, lock_key invalid |
 | E060 | 422 | Slot cannot be deleted due to existing appointments assigned to it |
 

@@ -6,7 +6,7 @@ The Overbooked API is organized around [REST](http://en.wikipedia.org/wiki/Repre
 
 ### Base URL
 
-```scheme
+```text
 https://api.overbooked.io
 ```
 
