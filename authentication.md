@@ -9,12 +9,12 @@ Two types of keys can be distinguished: **public key** and **secret key.** You c
 Authentication to the API is performed via [Bearer Token Authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/#:~:text=Bearer%20authentication%20%28also%20called%20token,the%20bearer%20of%20this%20token.%E2%80%9D). Provide your API key in `Authorization` HTTP header.
 
 ```bash
--H "Authorization: Bearer <token>"
+-H 'Authorization: Bearer <token>'
 ```
 
 {% tabs %}
 {% tab title="cURL" %}
-```http
+```bash
 curl https://api.overbooked.io/booking-blocks \
   -H 'Authorization: Bearer sk_da57d6a3fc6dc1c38877c99b5623c5a7ea99d305cb0ff0d072f3fafd99dd31c8'
 ```
