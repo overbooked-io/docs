@@ -72,4 +72,5 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E058 | 422 | The booking_disabled_before property should be higher than 0 |
 | E059 | 403 | Slot cannot be unlocked, lock_key invalid |
 | E060 | 422 | Slot cannot be deleted due to existing appointments assigned to it |
+| E061 | 422 | Cannot book appointment, booking block is not published |
 
