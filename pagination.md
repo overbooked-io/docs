@@ -11,13 +11,13 @@ All top-level API resources have support for bulk fetches via "list" API methods
 
 ### Example
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks?limit=20&page=1" %}
 {% api-method-summary %}
-
+blabla
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+sss
 {% endapi-method-description %}
 
 {% api-method-spec %}
