@@ -4,14 +4,14 @@
 
 All top-level API resources have support for bulk fetches via "list" API methods. When you call a list API method to retrieve most of these collections, they're returned to you in portions. Overbooked API utilizes numeric-based pagination via the `limit` and `page` parameters.
 
-Request parameters:
+### Request parameters
 
 | Parameter | Type |  | Min | Max |
 | :--- | :--- | :--- | :--- | :--- |
 | limit | integer | Number of items to return per page | 1 | 50 |
 | page | integer | Page number of objects to return | 1 | - |
 
-Response meta:
+### Response meta
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
