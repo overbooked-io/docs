@@ -9,12 +9,12 @@ Two types of keys can be distinguished: **public key** and **secret key.** You c
 Authentication to the API is performed via [Bearer Token Authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/#:~:text=Bearer%20authentication%20%28also%20called%20token,the%20bearer%20of%20this%20token.%E2%80%9D). Provide your API key in `Authorization` HTTP header.
 
 ```bash
--H "Authorization: Bearer <token>"
+-H 'Authorization: Bearer <api_key>'
 ```
 
 {% tabs %}
 {% tab title="cURL" %}
-```http
+```bash
 curl https://api.overbooked.io/booking-blocks \
   -H 'Authorization: Bearer sk_da57d6a3fc6dc1c38877c99b5623c5a7ea99d305cb0ff0d072f3fafd99dd31c8'
 ```
@@ -29,7 +29,7 @@ All API requests must be made over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Sec
 
 When you create the Overbooked organization, a public key and secret key will be created for you. These are located in your [environment settings](https://dashboard.overbooked.io/settings/environments) in the Overbooked Dashboard. 
 
-![](.gitbook/assets/screenshot-from-2020-12-08-20-14-43.png)
+![](../.gitbook/assets/screenshot-from-2020-12-08-20-14-43.png)
 
 {% hint style="danger" %}
 Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret keys in publicly accessible areas such as GitHub, client-side code, and so forth.
