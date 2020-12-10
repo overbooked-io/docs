@@ -2,7 +2,7 @@
 
 ## Consistent response
 
-Overbooked API returns standardized responses for better consistency. The response from the API always contains four fields: `error`,`data`, `meta` and `success`.
+The API returns standardized responses for better consistency. The response from the API always contains four fields: `error`,`data`, `meta` and `success`.
 
 {% code title="Response JSON object" %}
 ```javascript
@@ -51,6 +51,4 @@ Overbooked API returns standardized responses for better consistency. The respon
 }
 ```
 {% endcode %}
-
-
 
