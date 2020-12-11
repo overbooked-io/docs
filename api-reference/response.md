@@ -2,7 +2,7 @@
 
 ## Consistent response
 
-The API returns standardized responses for better consistency. The response from the API always contains four fields: `error`,`data`, `meta` and `success`.
+The API returns standardized responses for better consistency. The response from the API may contain four fields:`data`, `meta`, `error` and `success`
 
 {% code title="Response JSON object" %}
 ```javascript
@@ -34,9 +34,6 @@ The API returns standardized responses for better consistency. The response from
     "lockable": true,
     "locked_until": null,
     "metadata": {
-      "obj": {
-        "name": "John"
-      },
       "user_email": "john.doe@example.com"
     },
     "num_active_appointments": 1,
