@@ -47,3 +47,8 @@ Lorem ipsum ...
 ```
 {% endcode %}
 
+### Methods
+
+* [`POST /booking-blocks`](create-a-booking-block.md)\`\`
+* [`GET /booking-blocks`](object.md)
+* 
