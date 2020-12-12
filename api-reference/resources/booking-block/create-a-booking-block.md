@@ -1,5 +1,5 @@
 ---
-description: public.bookingBlock.create
+description: Lorem ipsum...
 ---
 
 # Create a booking block
