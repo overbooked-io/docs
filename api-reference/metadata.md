@@ -1,8 +1,13 @@
+---
+description: >-
+  Main objects available in Overbooked API (like Booking Blocks, Slots,
+  Appointments) have an updatable metadata property, which can be used to attach
+  custom key-value data.
+---
+
 # Metadata
 
-## Updateable metadata property
-
-Main objects available in Overbooked API \(like [Booking Blocks](resources/booking-block/object.md), [Slots](resources/slot/object.md), [Appointments](resources/appointment/object.md)\) have an updatable `metadata` property, which can be used to attach custom key-value data.
+## Updatable metadata property
 
 Metadata is useful for storing additional, structured information on an object. As an example, you could store the user's email or corresponding unique identifier from your system on eg. an [Appointment](resources/appointment/object.md) object. You can utilize it in any way you want. The Overbooked API is very flexible in this regard.
 
