@@ -1,13 +1,16 @@
+---
+description: The API returns standardized responses for better consistency.
+---
+
 # Response
 
-## Consistent response
+## Type of responses
 
-The API returns standardized responses for better consistency. The response from the API may contain four fields:`data`, `meta`, `error` and `success`
+The response from the API may contain four fields:`data`, `meta`, `error` and `success`
 
-{% code title="Response JSON object" %}
+{% code title="Success response JSON object" %}
 ```javascript
 {
-  "error": {...},
   "data": {...},
   "meta": {...},
   "success": boolean,
@@ -15,12 +18,21 @@ The API returns standardized responses for better consistency. The response from
 ```
 {% endcode %}
 
-* **error -** contains error details when there is 4xx or 5xx status returned. See [Errors](errors.md#error-handling).
-* **data** - contains a result of the request \(array or object\)
-* **meta** - contains additional data related to the request, for example [pagination details](pagination.md)
-* **success** - true/false dependent on status, 2xx - true, 4xx and 5xx - false
+{% code title="Error response JSON object" %}
+```javascript
+{
+  "error": {...},
+  "success": boolean,
+}
+```
+{% endcode %}
 
-{% code title="Example of response \(PATCH /slots/:slot\_id\)" %}
+* **error -** contains error details when there is 4xx or 5xx status returned. See [Errors](errors.md#error-handling).
+* **data** - contains a result of the request \(array or object\).
+* **meta** - contains additional data related to the request, for example [pagination details](pagination.md).
+* **success** - true/false dependent on status, 2xx - true, 4xx and 5xx - false.
+
+{% code title="Example of response" %}
 ```javascript
 {
   "data": {

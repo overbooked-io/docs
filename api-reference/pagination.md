@@ -1,8 +1,15 @@
+---
+description: >-
+  All top-level API resources have support for bulk fetches via "list" API
+  methods. When you call a list API method to retrieve most of these
+  collections, they're returned to you in portions.
+---
+
 # Pagination
 
 ## Numeric-based pagination
 
-All top-level API resources have support for bulk fetches via "list" API methods. When you call a list API method to retrieve most of these collections, they're returned to you in portions. Overbooked API utilizes numeric-based pagination via the `limit` and `page` parameters.
+Overbooked API utilizes numeric-based pagination via the `limit` and `page` parameters.
 
 ### Request parameters
 
