@@ -16,10 +16,16 @@ public.bookingBlock.convertToDraft
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
+Unique identifier of the Booking Block
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer `{secret_key}`
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -28,9 +34,31 @@ public.bookingBlock.convertToDraft
 
 {% endapi-method-response-example-description %}
 
+{% code title="public.bookingBlock.convertToDraft" %}
+```scheme
+{
+  "data": {
+    "_object": "booking_block",
+    "booking_disabled_before": 0,
+    "created_at": "2020-12-10T18:55:08.749Z",
+    "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
+    "metadata": {},
+    "name": "test_1",
+    "num_active_appointments": 7,
+    "num_appointments": 7,
+    "num_available_slots": 0,
+    "num_cancelled_appointments": 0,
+    "num_slots": 7,
+    "short_id": "ajdCcXlwTHd",
+    "status": "draft",
+    "timezone": "America/New_York",
+    "updated_at": "2020-12-12T16:27:47.590Z"
+  },
+  "meta": {},
+  "success": true
+}
 ```
-
-```
+{% endcode %}
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
