@@ -18,10 +18,6 @@ public.bookingBlock.create
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=false %}
-application/json
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer `{secret_key}`
 {% endapi-method-parameter %}
@@ -48,6 +44,7 @@ Set of key-value data that you can attach to an object
 
 {% endapi-method-response-example-description %}
 
+{% code title="public.bookingBlock.create" %}
 ```scheme
 {
   "data": {
@@ -73,6 +70,7 @@ Set of key-value data that you can attach to an object
   "success": true
 }
 ```
+{% endcode %}
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
