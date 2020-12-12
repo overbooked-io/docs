@@ -50,5 +50,9 @@ Lorem ipsum ...
 ### Methods
 
 * [`POST /booking-blocks`](create-a-booking-block.md)\`\`
-* [`GET /booking-blocks`](object.md)
-* 
+* [`GET /booking-blocks`](list-booking-blocks.md)\`\`
+* `GET /booking-blocks/:booking_block_id`
+* `PATCH /booking-blocks/:booking_block_id`
+* `POST /booking-blocks/:booking_block_id/publish`
+* `POST /booking-blocks/:booking_block_id/convert-draft`
+

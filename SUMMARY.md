@@ -12,7 +12,7 @@
 * [Resources](api-reference/resources/README.md)
   * [Booking Block](api-reference/resources/booking-block/README.md)
     * [Create a booking block](api-reference/resources/booking-block/create-a-booking-block.md)
-    * [List all booking blocks](api-reference/resources/booking-block/object.md)
+    * [List all booking blocks](api-reference/resources/booking-block/list-booking-blocks.md)
     * [Get a booking block](api-reference/resources/booking-block/get-a-booking-block.md)
     * [Update a booking block](api-reference/resources/booking-block/update-a-booking-block.md)
     * [Publish a booking block](api-reference/resources/booking-block/publish-a-booking-block.md)
