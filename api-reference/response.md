@@ -4,7 +4,7 @@ description: The API returns standardized responses for better consistency.
 
 # Response
 
-## Type of responses
+## Types of responses
 
 The response from the API may contain four fields:`data`, `meta`, `error` and `success`
 
