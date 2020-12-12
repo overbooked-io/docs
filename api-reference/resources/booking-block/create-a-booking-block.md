@@ -17,7 +17,7 @@ application/json
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Authorization" type="string" required=true %}
-
+Bearer &lt;secret\_key&gt;
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -42,8 +42,30 @@ application/json
 
 {% endapi-method-response-example-description %}
 
-```
-
+```scheme
+{
+  "data": {
+    "_object": "booking_block",
+    "booking_disabled_before": 0,
+    "created_at": "2020-12-12T14:53:39.931Z",
+    "id": "e185732d-8db3-4d71-ac2e-7fce4afe2e95",
+    "metadata": {
+      "foo": "bar"
+    },
+    "name": "test",
+    "num_active_appointments": 0,
+    "num_appointments": 0,
+    "num_available_slots": 0,
+    "num_cancelled_appointments": 0,
+    "num_slots": 0,
+    "short_id": "aG91djROSzM",
+    "status": "draft",
+    "timezone": "America/New_York",
+    "updated_at": "2020-12-12T14:53:39.931Z"
+  },
+  "meta": {},
+  "success": true
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
