@@ -1,3 +1,7 @@
+---
+description: Lorem ipsum...
+---
+
 # List all booking blocks
 
 {% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks" %}

@@ -4,8 +4,6 @@ description: Lorem ipsum...
 
 # Create a booking block
 
-Lorem ipsum...
-
 {% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks" %}
 {% api-method-summary %}
 public.bookingBlock.create
