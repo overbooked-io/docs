@@ -23,7 +23,7 @@ Lorem ipsum ...
 | `updated_at` | date | The date at which the object was last updated, in UTC in ISO 8601. |
 | `created_at` | date | The date at which the object was created, in UTC in ISO 8601. |
 
-### Example
+## Example
 
 {% code title="Booking Block" %}
 ```javascript
@@ -47,7 +47,7 @@ Lorem ipsum ...
 ```
 {% endcode %}
 
-### Methods
+## Methods
 
 * [`POST /booking-blocks`](create-a-booking-block.md)
 * [`GET /booking-blocks`](list-booking-blocks.md)
