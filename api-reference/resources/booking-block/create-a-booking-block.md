@@ -1,3 +1,7 @@
+---
+description: public.bookingBlock.create
+---
+
 # Create a booking block
 
 {% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks" %}
