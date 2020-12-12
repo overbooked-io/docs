@@ -49,10 +49,10 @@ Lorem ipsum ...
 
 ### Methods
 
-* [`POST /booking-blocks`](create-a-booking-block.md)\`\`
-* [`GET /booking-blocks`](list-booking-blocks.md)\`\`
-* \`\`[`GET /booking-blocks/:booking_block_id`](get-a-booking-block.md)\`\`
-* \`\`[`PATCH /booking-blocks/:booking_block_id`](update-a-booking-block.md)
-* \`\`[`POST /booking-blocks/:booking_block_id/publish`](publish-a-booking-block.md)
-* \`\`[`POST /booking-blocks/:booking_block_id/convert-draft`](convert-a-booking-block-to-draft.md)\`\`
+* [`POST /booking-blocks`](create-a-booking-block.md)
+* [`GET /booking-blocks`](list-booking-blocks.md)
+* [`GET /booking-blocks/:booking_block_id`](get-a-booking-block.md)
+* [`PATCH /booking-blocks/:booking_block_id`](update-a-booking-block.md)
+* [`POST /booking-blocks/:booking_block_id/publish`](publish-a-booking-block.md)
+* [`POST /booking-blocks/:booking_block_id/convert-draft`](convert-a-booking-block-to-draft.md)
 
