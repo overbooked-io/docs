@@ -1,5 +1,7 @@
 ---
-description: Lorem ipsum...
+description: >-
+  Creates new Booking Block object, that can be used to create Slots and
+  Appointments within it.
 ---
 
 # Create a booking block
