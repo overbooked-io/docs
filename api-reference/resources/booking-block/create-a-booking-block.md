@@ -4,7 +4,7 @@ description: >-
   Appointments within it.
 ---
 
-# Create a booking block
+# Create a Booking Block
 
 {% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks" %}
 {% api-method-summary %}

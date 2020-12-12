@@ -1,8 +1,10 @@
 ---
-description: Lorem ipsum...
+description: >-
+  Updates the specified Booking Block by setting the values of the parameters
+  passed. Any parameters not provided will be left unchanged.
 ---
 
-# Update a booking block
+# Update a Booking Block
 
 {% api-method method="patch" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id" %}
 {% api-method-summary %}

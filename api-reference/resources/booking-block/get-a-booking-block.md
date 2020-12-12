@@ -1,8 +1,8 @@
 ---
-description: Lorem ipsum...
+description: Retrieves a Booking Block details.
 ---
 
-# Get a booking block
+# Get a Booking Block
 
 {% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id" %}
 {% api-method-summary %}

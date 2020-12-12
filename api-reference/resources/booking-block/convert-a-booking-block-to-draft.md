@@ -1,8 +1,8 @@
 ---
-description: Lorem ipsum...
+description: Reverts the status from published to draft.
 ---
 
-# Convert a booking block to draft
+# Convert a Booking Block to draft
 
 {% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id/convert-draft" %}
 {% api-method-summary %}

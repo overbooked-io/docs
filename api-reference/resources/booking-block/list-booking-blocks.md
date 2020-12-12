@@ -1,8 +1,8 @@
 ---
-description: Lorem ipsum...
+description: Returns list of all booking blocks.
 ---
 
-# List all booking blocks
+# List all Booking Blocks
 
 {% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks" %}
 {% api-method-summary %}

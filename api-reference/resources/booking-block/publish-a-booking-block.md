@@ -1,8 +1,10 @@
 ---
-description: Lorem ipsum...
+description: >-
+  Changes the status from draft to published and makes all assigned Slots
+  publicly visible.
 ---
 
-# Publish a booking block
+# Publish a Booking Block
 
 {% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id/publish" %}
 {% api-method-summary %}
