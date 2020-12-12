@@ -1,4 +1,4 @@
-# The boking block object
+# List all booking blocks
 
 {% code title="Booking Block" %}
 ```scheme

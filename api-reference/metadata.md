@@ -18,7 +18,7 @@ Metadata is useful for storing additional, structured information on an object. 
 
 ### Example
 
-{% code title="Booking block" %}
+{% code title="Metadata on Appointment" %}
 ```scheme
 {
   "_object": "appointment",
