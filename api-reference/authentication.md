@@ -1,16 +1,22 @@
+---
+description: >-
+  The Overbooked API uses API keys to authenticate requests. The authentication
+  is performed via Bearer Token Authentication.
+---
+
 # Authentication
 
 ## API Keys
 
-The Overbooked API uses API keys to authenticate requests. You can view and manage your API keys in [the Overbooked Dashboard](https://dashboard.overbooked.io). 
+Two types of keys can be distinguished, **public key** and **secret key.** You can read about the differences between them [here](authentication.md#public-key-and-secret-key).
 
-Two types of keys can be distinguished: **public key** and **secret key.** You can read about the differences between them [here](authentication.md#public-key-and-secret-key).
-
-Authentication to the API is performed via [Bearer Token Authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/#:~:text=Bearer%20authentication%20%28also%20called%20token,the%20bearer%20of%20this%20token.%E2%80%9D). Provide your API key in `Authorization` HTTP header.
+To undergo the authentication process, provide your API key in `Authorization` HTTP header.
 
 ```bash
 -H 'Authorization: Bearer <api_key>'
 ```
+
+### Example
 
 {% tabs %}
 {% tab title="cURL" %}

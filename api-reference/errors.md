@@ -1,6 +1,13 @@
+---
+description: >-
+  The API uses HTTP response status codes to indicate the success or failure of
+  your API requests. If your request fails, Overbooked API returns an error
+  using the appropriate status code.
+---
+
 # Errors
 
-The API uses [HTTP response status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) to indicate the success or failure of your API requests. If your request fails, Overbooked API returns an [error](https://stripe.com/docs/api#errors) using the appropriate status code.
+## Error codes
 
 In general, there are three status code ranges you can expect:
 
