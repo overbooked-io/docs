@@ -10,8 +10,8 @@ Lorem ipsum ...
 | :--- | :--- | :--- |
 | `id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the object. |
 | `metadata` | [metadata](../../metadata.md) | Set of key-value data that you can attach to an object. This can be useful for storing additional information about the object in a structured format. |
-| `name` | string | The booking block’s name, meant to be displayable publicly. |
-| `status` | string | The status of the booking block is either `draft` or `published`. When the status is equal to `draft`, then [Slots](../slot/) are not available to be booked. |
+| `name` | string | The Booking Block’s name, meant to be displayable publicly. |
+| `status` | string | The status of the Booking Block is either `draft` or `published`. When the status is equal to `draft`, then [Slots](../slot/) are not available to be booked. |
 | `timezone` | string | The output timezone for all timestamps in the Booking Block. A list of possible time zone values is maintained at the [IANA Time Zone Database](http://www.iana.org/time-zones). |
 | `short_id` | string | Short representation of the property `id`. |
 | `num_appointments` | integer | A number of all [Appointments](../appointment/) booked on [Slots](../slot/) within the Booking Block. |

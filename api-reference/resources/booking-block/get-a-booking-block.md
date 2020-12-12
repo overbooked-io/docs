@@ -1,3 +1,7 @@
+---
+description: Lorem ipsum...
+---
+
 # Get a booking block
 
 {% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id" %}
@@ -13,7 +17,7 @@ public.bookingBlock.get
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="booking\_block\_id" type="string" required=true %}
-Unique identifier of the booking block
+Unique identifier of the Booking Block
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 

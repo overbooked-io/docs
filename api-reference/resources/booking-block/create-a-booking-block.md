@@ -23,7 +23,7 @@ Bearer `{secret_key}`
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-The booking block’s name, meant to be displayable publicly
+The Booking Block’s name, meant to be displayable publicly
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="timezone" type="string" required=true %}
@@ -31,7 +31,7 @@ The output timezone for all timestamps in the Booking Block
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="metadata" type="object" required=false %}
-Set of key-value data that you can attach to an object
+Set of key-value data that you can attach to the object
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

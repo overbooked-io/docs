@@ -23,11 +23,11 @@ Bearer `{public_key|secret_key}`
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="name" type="string" required=false %}
-The booking block’s name
+The Booking Block’s name
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="string" required=false %}
-The status of the booking block could be either `draft` or `published`
+The status of the Booking Block could be either `draft` or `published`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="number" required=true %}
