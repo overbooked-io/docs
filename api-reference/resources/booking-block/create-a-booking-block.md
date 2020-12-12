@@ -17,7 +17,7 @@ application/json
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer `<secret_key>`
+Bearer `{secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
