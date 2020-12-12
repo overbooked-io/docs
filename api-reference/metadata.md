@@ -9,7 +9,7 @@ description: >-
 
 ## Updatable metadata property
 
-Metadata is useful for storing additional, structured information on an object. As an example, you could store the user's email or corresponding unique identifier from your system on eg. an [Appointment](resources/appointment/) object. You can utilize it in any way you want. The Overbooked API is very flexible in this regard.
+Metadata is useful for storing additional, structured information on an object. As an example, you could store the user's email or corresponding unique identifier from your system on eg. an [Appointment](resources/appointment.md) object. You can utilize it in any way you want. The Overbooked API is very flexible in this regard.
 
 ### Limitations
 
