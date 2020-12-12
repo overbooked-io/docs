@@ -1,10 +1,14 @@
 ---
-description: Lorem ipsum
+description: The Booking Block is a bucket for Slots and Appointments.
 ---
 
 # Booking Block
 
-Lorem ipsum ...
+The Booking Block is not embedded in a time, so that is very flexible in usage. You control your booking availability by using Slots and their properties.
+
+The Booking Block can have 2 statuses: `draft` and `published`. When the status is `draft`, it means that it's not visible publicly and none can book Appointments within it. You can easily publish it to make it available.
+
+You can also use `metadata` property to store data that refer to any entities from your system.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
