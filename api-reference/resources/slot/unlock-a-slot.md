@@ -73,7 +73,7 @@ A flag indicating whether the Slot can be locked.
       "updated_at": "2020-12-19T15:44:22.854Z"
     }
   ],
-  "meta": {},
+    "meta": {},
   "success": true
 }
 ```
