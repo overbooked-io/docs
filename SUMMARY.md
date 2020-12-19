@@ -19,5 +19,6 @@
     * [Convert a Booking Block to draft](api-reference/resources/booking-block/convert-a-booking-block-to-draft.md)
   * [Slot](api-reference/resources/slot/README.md)
     * [Untitled](api-reference/resources/slot/untitled.md)
-  * [Appointment](api-reference/resources/appointment.md)
+  * [Appointment](api-reference/resources/appointment/README.md)
+    * [Untitled](api-reference/resources/appointment/untitled.md)
 

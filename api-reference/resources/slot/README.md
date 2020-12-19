@@ -4,9 +4,7 @@ description: The Slot is a period of time for which Appointments can be booked.
 
 # Slot
 
-A slot is a bucket for Appointments, embedded in time. It has the `start_date` and the `end_date`. It also has a maximum `capacity` which defines how many [Appointments](../appointment.md) can be booked in a given Slot. It can have 2 statuses: `active` and `disabled`. When the status is `disabled`, it means that it's not visible publicly and none can book Appointments within it.
-
-You can also use `metadata` property to store data that refer to any entities from your system.
+The Slot is a bucket for Appointments, embedded in time. It has the `start_date` and the `end_date`. It has a maximum `capacity` which defines how many [Appointments](../appointment/) can be booked in a given Slot. It can have 2 statuses: `active` and `disabled`. It can be extendec via `metadata` property to store data that refer to any entities from your system.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
@@ -17,12 +15,12 @@ You can also use `metadata` property to store data that refer to any entities fr
 | `start_date` | date | The date at which the Slot begins, in UTC in ISO 8601. |
 | `end_date` | date | The date at which the Slot ends, in UTC in ISO 8601. |
 | `capacity` | integer | The maximum amount of active Appointments that the Slot can contain. |
-| `status` | string | The status of the Slot is either `active` or `disabled`. When the status is equal to `disabled`, then no [Appointments](../appointment.md) can be booked on this Slot. |
+| `status` | string | The status of the Slot is either `active` or `disabled`. When the status is equal to `disabled`, then no [Appointments](../appointment/) can be booked on this Slot. |
 | `lockable` | boolean | A flag indicating whether the Slot can be locked. If `lockable` equals `false` then the Slot cannot be locked via the API. |
 | `locked_until` | date | The date to which the Slot is locked, in UTC in ISO 8601.  |
-| `num_appointments` | integer | The number of all [Appointments](../appointment.md) booked on the Slot. |
-| `num_canelled_appointments` | integer | The number of all cancelled [Appointments](../appointment.md) booked on the Slot. |
-| `num_active_appointments` | integer | The number of all active [Appointments](../appointment.md) booked on the Slot. |
+| `num_appointments` | integer | The number of all [Appointments](../appointment/) booked on the Slot. |
+| `num_canelled_appointments` | integer | The number of all cancelled [Appointments](../appointment/) booked on the Slot. |
+| `num_active_appointments` | integer | The number of all active [Appointments](../appointment/) booked on the Slot. |
 | `updated_at` | date | The date at which the Slot was last updated, in UTC in ISO 8601. |
 | `created_at` | date | The date at which the Slot was created, in UTC in ISO 8601. |
 

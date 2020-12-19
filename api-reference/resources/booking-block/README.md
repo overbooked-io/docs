@@ -18,9 +18,9 @@ You can also use `metadata` property to store data that refer to any entities fr
 | `status` | string | The status of the Booking Block is either `draft` or `published`. When the status is equal to `draft`, then [Slots](../slot/) are not available to be booked. |
 | `timezone` | string | The output timezone for all timestamps in the Booking Block. A list of possible time zone values is maintained at the [IANA Time Zone Database](http://www.iana.org/time-zones). |
 | `short_id` | string | Short representation of the property `id`. |
-| `num_appointments` | integer | A number of all [Appointments](../appointment.md) booked on [Slots](../slot/) within the Booking Block. |
-| `num_active_appointments` | integer | A number of active [Appointments](../appointment.md) \(with status `active`\) booked on [Slots](../slot/) within the Booking Block. |
-| `num_cancelled_appointments` | integer | A number of cancelled [Appointments](../appointment.md) \(with status `cancelled`\) booked on [Slots](../slot/) within the Booking Block. |
+| `num_appointments` | integer | A number of all [Appointments](../appointment/) booked on [Slots](../slot/) within the Booking Block. |
+| `num_active_appointments` | integer | A number of active [Appointments](../appointment/) \(with status `active`\) booked on [Slots](../slot/) within the Booking Block. |
+| `num_cancelled_appointments` | integer | A number of cancelled [Appointments](../appointment/) \(with status `cancelled`\) booked on [Slots](../slot/) within the Booking Block. |
 | `num_slots` | integer | A number of all [Slots](../slot/) created within the Booking Block. |
 | `num_available_slots` | integer | A number of all available [Slots](../slot/) \(available to book\) created within the Booking Block. |
 | `booking_disabled_before` | integer | The number of seconds before the [Slot](../slot/) starts when the booking option is disabled. |
