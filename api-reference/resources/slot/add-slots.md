@@ -22,6 +22,22 @@ Bearer `{secret_key}`
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
+{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
+The Booking Block’s id \(uuid\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="slots\[\]\[start\_date\]" type="string" required=true %}
+The date at which the Slot begins, in UTC in ISO 8601.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="slots\[\]\[end\_date\]" type="string" required=true %}
+The date at which the Slot ends, in UTC in ISO 8601.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="slots\[\]\[capacity\]" type="integer" required=true %}
+The maximum amount of active Appointments that the Slot can contain.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="slots\[\]\[metadata\]" type="object" required=false %}
 Set of key-value data that you can attach to the Slot
 {% endapi-method-parameter %}
@@ -30,21 +46,6 @@ Set of key-value data that you can attach to the Slot
 A flag indicating whether the Slot can be locked.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="slots\[\]\[capacity\]" type="integer" required=true %}
-The maximum amount of active Appointments that the Slot can contain.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="slots\[\]\[end\_date\]" type="string" required=true %}
-The date at which the Slot ends, in UTC in ISO 8601.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
-The Booking Block’s id \(uuid\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="slots\[\]\[start\_date\]" type="string" required=true %}
-The date at which the Slot begins, in UTC in ISO 8601.
-{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
