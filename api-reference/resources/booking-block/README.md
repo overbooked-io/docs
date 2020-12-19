@@ -15,15 +15,15 @@ You can also use `metadata` property to store data that refer to any entities fr
 | `id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the object. |
 | `metadata` | [metadata](../../metadata.md) | Set of key-value data that you can attach to an object. This can be useful for storing additional information about the object in a structured format. |
 | `name` | string | The Booking Block’s name, meant to be displayable publicly. |
-| `status` | string | The status of the Booking Block is either `draft` or `published`. When the status is equal to `draft`, then [Slots](../slot.md) are not available to be booked. |
+| `status` | string | The status of the Booking Block is either `draft` or `published`. When the status is equal to `draft`, then [Slots](../slot/) are not available to be booked. |
 | `timezone` | string | The output timezone for all timestamps in the Booking Block. A list of possible time zone values is maintained at the [IANA Time Zone Database](http://www.iana.org/time-zones). |
 | `short_id` | string | Short representation of the property `id`. |
-| `num_appointments` | integer | A number of all [Appointments](../appointment.md) booked on [Slots](../slot.md) within the Booking Block. |
-| `num_active_appointments` | integer | A number of active [Appointments](../appointment.md) \(with status `active`\) booked on [Slots](../slot.md) within the Booking Block. |
-| `num_cancelled_appointments` | integer | A number of cancelled [Appointments](../appointment.md) \(with status `cancelled`\) booked on [Slots](../slot.md) within the Booking Block. |
-| `num_slots` | integer | A number of all [Slots](../slot.md) created within the Booking Block. |
-| `num_available_slots` | integer | A number of all available [Slots](../slot.md) \(available to book\) created within the Booking Block. |
-| `booking_disabled_before` | integer | The number of seconds before the [Slot](../slot.md) starts when the booking option is disabled. |
+| `num_appointments` | integer | A number of all [Appointments](../appointment.md) booked on [Slots](../slot/) within the Booking Block. |
+| `num_active_appointments` | integer | A number of active [Appointments](../appointment.md) \(with status `active`\) booked on [Slots](../slot/) within the Booking Block. |
+| `num_cancelled_appointments` | integer | A number of cancelled [Appointments](../appointment.md) \(with status `cancelled`\) booked on [Slots](../slot/) within the Booking Block. |
+| `num_slots` | integer | A number of all [Slots](../slot/) created within the Booking Block. |
+| `num_available_slots` | integer | A number of all available [Slots](../slot/) \(available to book\) created within the Booking Block. |
+| `booking_disabled_before` | integer | The number of seconds before the [Slot](../slot/) starts when the booking option is disabled. |
 | `updated_at` | date | The date at which the object was last updated, in UTC in ISO 8601. |
 | `created_at` | date | The date at which the object was created, in UTC in ISO 8601. |
 
