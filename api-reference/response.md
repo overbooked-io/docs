@@ -13,7 +13,7 @@ The response from the API may contain four fields:`data`, `meta`, `error` and `s
 {
   "data": {...},
   "meta": {...},
-  "success": boolean,
+  "success": true,
 }
 ```
 {% endcode %}
@@ -22,7 +22,7 @@ The response from the API may contain four fields:`data`, `meta`, `error` and `s
 ```javascript
 {
   "error": {...},
-  "success": boolean,
+  "success": false,
 }
 ```
 {% endcode %}
