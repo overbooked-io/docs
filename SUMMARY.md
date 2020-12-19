@@ -18,7 +18,7 @@
     * [Publish a Booking Block](api-reference/resources/booking-block/publish-a-booking-block.md)
     * [Convert a Booking Block to draft](api-reference/resources/booking-block/convert-a-booking-block-to-draft.md)
   * [Slot](api-reference/resources/slot/README.md)
-    * [Create a Slot](api-reference/resources/slot/create-a-slot.md)
+    * [Add Slots](api-reference/resources/slot/add-slots.md)
     * [List Slots](api-reference/resources/slot/list-slots.md)
     * [Get a Slot](api-reference/resources/slot/get-a-slot.md)
     * [Update a Slot](api-reference/resources/slot/update-a-slot.md)

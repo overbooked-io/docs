@@ -51,7 +51,7 @@ The Slot is a bucket for Appointments, embedded in time. It has the `start_date`
 
 ## Methods
 
-* [`POST /slots`](create-a-slot.md)
+* [`POST /slots`](add-slots.md)
 * [`GET /slots`](list-slots.md)
 * [`GET /slots/:slot_id`](get-a-slot.md)
 * [`PATCH /slots/:slot_id`](update-a-slot.md)
