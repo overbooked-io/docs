@@ -1,8 +1,8 @@
 # Disable a Slot
 
-{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/enable" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/disable" %}
 {% api-method-summary %}
-public.slot.enable
+public.slot.disable
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -30,12 +30,12 @@ Bearer `{secret_key}`
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.slot.enable" %}
+{% code title="public.slot.disable" %}
 ```javascript
 {
   "data": {
     "_object": "slot",
-    "available": true,
+    "available": false,
     "booking_block_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
     "capacity": 1,
     "created_at": "2020-12-19T15:44:22.854Z",
@@ -48,7 +48,7 @@ Bearer `{secret_key}`
     "num_appointments": 0,
     "num_cancelled_appointments": 0,
     "start_date": "2020-10-21T22:30:00+02:00",
-    "status": "active",
+    "status": "disabled",
     "updated_at": "2020-12-19T15:44:22.854Z"
   },
   "meta": {},
@@ -60,6 +60,4 @@ Bearer `{secret_key}`
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

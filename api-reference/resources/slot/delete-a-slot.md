@@ -1,8 +1,8 @@
 # Delete a Slot
 
-{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/enable" %}
+{% api-method method="delete" host="https://api.overbooked.io" path="/slots/:slot\_id" %}
 {% api-method-summary %}
-public.slot.enable
+public.slot.delete
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -30,27 +30,10 @@ Bearer `{secret_key}`
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.slot.enable" %}
+{% code title="public.slot.delete" %}
 ```javascript
 {
-  "data": {
-    "_object": "slot",
-    "available": true,
-    "booking_block_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
-    "capacity": 1,
-    "created_at": "2020-12-19T15:44:22.854Z",
-    "end_date": "2020-10-21T22:50:00+02:00",
-    "id": "3751095a-b4ef-41a3-98a3-b8a0eecfc332",
-    "lockable": true,
-    "locked_until": null,
-    "metadata": {},
-    "num_active_appointments": 0,
-    "num_appointments": 0,
-    "num_cancelled_appointments": 0,
-    "start_date": "2020-10-21T22:30:00+02:00",
-    "status": "active",
-    "updated_at": "2020-12-19T15:44:22.854Z"
-  },
+  "data": {},
   "meta": {},
   "success": true
 }
@@ -60,6 +43,4 @@ Bearer `{secret_key}`
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

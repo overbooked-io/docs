@@ -1,8 +1,8 @@
 # Lock a Slot
 
-{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/enable" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/lock" %}
 {% api-method-summary %}
-public.slot.enable
+public.slot.lock
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -19,9 +19,19 @@ public.slot.enable
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer `{secret_key}`
+Bearer `{public_key|secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="lock\_until" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="lock\_key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -30,7 +40,7 @@ Bearer `{secret_key}`
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.slot.enable" %}
+{% code title="public.slot.lock" %}
 ```javascript
 {
   "data": {
@@ -42,7 +52,7 @@ Bearer `{secret_key}`
     "end_date": "2020-10-21T22:50:00+02:00",
     "id": "3751095a-b4ef-41a3-98a3-b8a0eecfc332",
     "lockable": true,
-    "locked_until": null,
+    "locked_until": "2020-12-19T16:00:00.000Z",
     "metadata": {},
     "num_active_appointments": 0,
     "num_appointments": 0,
@@ -60,6 +70,4 @@ Bearer `{secret_key}`
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

@@ -1,8 +1,8 @@
 # Unlock a Slot
 
-{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/enable" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/unlock" %}
 {% api-method-summary %}
-public.slot.enable
+public.slot.unlock
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -22,6 +22,12 @@ public.slot.enable
 Bearer `{secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="lock\_key" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -30,7 +36,7 @@ Bearer `{secret_key}`
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.slot.enable" %}
+{% code title="public.slot.unlock" %}
 ```javascript
 {
   "data": {
@@ -60,6 +66,4 @@ Bearer `{secret_key}`
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
