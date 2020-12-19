@@ -13,19 +13,19 @@ public.slot.unlock
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="slot\_id" type="string" required=true %}
-
+Unique identifier for the Slot.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer `{secret_key}`
+Bearer `{public_key|secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="lock\_key" type="string" required=true %}
-
+A unique, random string used to distinguish a lock, provided during locking operation.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}

@@ -19,27 +19,27 @@ Bearer `{public_key|secret_key}`
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="available" type="boolean" required=false %}
-
+A flag indicating whether the Slot is available for booking.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="end\_date" type="string" required=false %}
-
+The date at which the Slot ends, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="start\_date" type="string" required=false %}
-
+The date at which the Slot begins, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="booking\_block\_id" type="string" required=false %}
-
+The Booking Block’s id \(uuid\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="integer" required=true %}
-
+The number of items to return per page.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="integer" required=true %}
-
+The page number of objects to return.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}

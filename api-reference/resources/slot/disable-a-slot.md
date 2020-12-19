@@ -13,7 +13,7 @@ public.slot.disable
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="slot\_id" type="string" required=true %}
-
+Unique identifier for the Slot.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 

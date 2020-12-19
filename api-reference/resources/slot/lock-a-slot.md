@@ -13,7 +13,7 @@ public.slot.lock
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="slot\_id" type="string" required=true %}
-
+Unique identifier for the Slot.
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -25,11 +25,11 @@ Bearer `{public_key|secret_key}`
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="lock\_until" type="string" required=true %}
-
+The date to which the Slot is locked, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="lock\_key" type="string" required=true %}
-
+A unique, random string used to distinguish a lock. The lock key should be passed in the request in case of an unlocking operation.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -70,4 +70,6 @@ Bearer `{public_key|secret_key}`
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
