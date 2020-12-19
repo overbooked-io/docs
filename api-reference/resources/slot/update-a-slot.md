@@ -1,3 +1,9 @@
+---
+description: >-
+  Updates the specified Slot by setting the values of the parameters passed. Any
+  parameters not provided will be left unchanged.
+---
+
 # Update a Slot
 
 {% api-method method="patch" host="https://api.overbooked.io" path="/slots/:slot\_id" %}

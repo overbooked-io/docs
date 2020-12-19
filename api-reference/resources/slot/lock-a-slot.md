@@ -1,3 +1,7 @@
+---
+description: 'Locks the Slot for a while, making it impossible for others to book.'
+---
+
 # Lock a Slot
 
 {% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/lock" %}

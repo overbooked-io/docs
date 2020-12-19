@@ -1,3 +1,7 @@
+---
+description: Changes the status from active to disabled and makes Slot not visible.
+---
+
 # Disable a Slot
 
 {% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/disable" %}

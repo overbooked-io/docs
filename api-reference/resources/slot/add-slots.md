@@ -10,7 +10,7 @@ public.slot.add
 {% endapi-method-summary %}
 
 {% api-method-description %}
-It accepts an array of partial Slot object - including fields: `start_date`, `end_date`, `capacity`, `lockable`, `metadata`
+It accepts an array \(`slots`\) of partial Slot objects - including fields: `start_date`, `end_date`, `capacity`, `lockable`, `metadata`
 {% endapi-method-description %}
 
 {% api-method-spec %}

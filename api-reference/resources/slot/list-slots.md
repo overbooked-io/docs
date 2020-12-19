@@ -1,3 +1,7 @@
+---
+description: Returns paginated list of all Slots matched by given filters.
+---
+
 # List Slots
 
 {% api-method method="get" host="https://api.overbooked.io" path="/slots" %}
@@ -104,6 +108,4 @@ The Booking Block’s id \(uuid\)
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

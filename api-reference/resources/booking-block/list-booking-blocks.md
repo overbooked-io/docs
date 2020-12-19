@@ -1,5 +1,5 @@
 ---
-description: Returns list of all Booking Blocks.
+description: Returns paginated list of all Booking Blocks matched by given filters.
 ---
 
 # List Booking Blocks

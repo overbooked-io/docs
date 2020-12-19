@@ -1,3 +1,7 @@
+---
+description: Retrieves a Slot details.
+---
+
 # Get a Slot
 
 {% api-method method="get" host="https://api.overbooked.io" path="/slots/:slot\_id" %}

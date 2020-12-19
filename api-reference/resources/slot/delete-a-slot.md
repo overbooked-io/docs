@@ -1,3 +1,7 @@
+---
+description: Deletes permanently Slot.
+---
+
 # Delete a Slot
 
 {% api-method method="delete" host="https://api.overbooked.io" path="/slots/:slot\_id" %}
@@ -6,7 +10,7 @@ public.slot.delete
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+All Appointments booked on the Slot should be deleted first, otherwise the operation will be rejected.
 {% endapi-method-description %}
 
 {% api-method-spec %}

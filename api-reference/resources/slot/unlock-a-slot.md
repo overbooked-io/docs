@@ -1,3 +1,7 @@
+---
+description: Unlocks the Slot making it available to book by others.
+---
+
 # Unlock a Slot
 
 {% api-method method="post" host="https://api.overbooked.io" path="/slots/:slot\_id/unlock" %}
