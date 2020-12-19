@@ -1,0 +1,2 @@
+# Disable a Slot
+

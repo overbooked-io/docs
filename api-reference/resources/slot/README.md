@@ -51,13 +51,15 @@ The Slot is a bucket for Appointments, embedded in time. It has the `start_date`
 
 ## Methods
 
-* [`POST /slots`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/create-a-slot.md)
-* [`GET /slots`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/list-slots.md)
-* [`GET /slots/:slot_id`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/get-a-slot.md)
-* [`PATCH /slots/:slot_id`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/update-a-slot.md)
-* [`POST /slots/:slot_id/enable`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/enable-a-slot.md)
-* [`POST /slots/:slot_id/disable`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/disable-a-slot.md)
-* [`POST /slots/:slot_id/lock`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/lock-a-slot.md)
-* [`POST /slots/:slot_id/unlock`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/unlock-a-slot.md)
-* [`DELETE /slots/:slot_id`](https://github.com/overbooked-io/docs/tree/07a441ac761c8929310bb6efab45bd764b93331b/api-reference/resources/slot/delete-a-slot.md)
+* [`POST /slots`](create-a-slot.md)
+* [`GET /slots`](list-slots.md)
+* [`GET /slots/:slot_id`](get-a-slot.md)
+* [`PATCH /slots/:slot_id`](update-a-slot.md)
+* [`POST /slots/:slot_id/enable`](enable-a-slot.md)
+* [`POST /slots/:slot_id/disable`](disable-a-slot.md)
+* [`POST /slots/:slot_id/lock`](lock-a-slot.md)
+* [`POST /slots/:slot_id/unlock`](unlock-a-slot.md)
+* [`DELETE /slots/:slot_id`](delete-a-slot.md)
+
+
 
