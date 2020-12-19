@@ -42,7 +42,6 @@ The response from the API may contain four fields:`data`, `meta`, `error` and `s
     "created_at": "2020-12-01T05:06:30.729Z",
     "end_date": "2020-12-01T05:26:30.717Z",
     "id": "de9f1f1e-1436-4f90-9658-c7d5c7009c38",
-    "lock_key": null,
     "lockable": true,
     "locked_until": null,
     "metadata": {
