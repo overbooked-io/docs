@@ -17,7 +17,7 @@ The Slot is a bucket for Appointments, embedded in time. It has the `start_date`
 | `capacity` | integer | The maximum amount of active Appointments that the Slot can contain. |
 | `status` | string | The status of the Slot is either `active` or `disabled`. When the status is equal to `disabled`, then no [Appointments](../appointment/) can be booked on this Slot. |
 | `lockable` | boolean | A flag indicating whether the Slot can be locked. If `lockable` equals `false` then the Slot cannot be locked via the API. |
-| `locked_until` | date | The date to which the Slot is locked, in UTC in ISO 8601.  |
+| `locked_until` | date | The date to which the Slot is locked, in UTC in ISO 8601. |
 | `num_appointments` | integer | The number of all [Appointments](../appointment/) booked on the Slot. |
 | `num_canelled_appointments` | integer | The number of all cancelled [Appointments](../appointment/) booked on the Slot. |
 | `num_active_appointments` | integer | The number of all active [Appointments](../appointment/) booked on the Slot. |
@@ -60,6 +60,4 @@ The Slot is a bucket for Appointments, embedded in time. It has the `start_date`
 * [`POST /slots/:slot_id/lock`](lock-a-slot.md)
 * [`POST /slots/:slot_id/unlock`](unlock-a-slot.md)
 * [`DELETE /slots/:slot_id`](delete-a-slot.md)
-
-
 

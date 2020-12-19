@@ -1,9 +1,8 @@
 ---
-description: >-
-Creates new Slot objects, that can be used to book Appointments.
+description: 'Creates new Slot objects, that can be used to book Appointments.'
 ---
 
-# Create a Slot
+# Add Slots
 
 {% api-method method="post" host="https://api.overbooked.io" path="/slots" %}
 {% api-method-summary %}
@@ -11,7 +10,7 @@ public.slot.add
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+It accepts an array of partial Slot object - including fields: `start_date`, `end_date`, `capacity`, `lockable`, `metadata`
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,16 +22,28 @@ Bearer `{secret_key}`
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="booking_block_id" type="string" required=true %}
-The Booking Block’s id
+{% api-method-parameter name="slots\[\]\[metadata\]" type="object" required=false %}
+Set of key-value data that you can attach to the Slot
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="timezone" type="string" required=true %}
-The output timezone for all timestamps in the Booking Block
+{% api-method-parameter name="slots\[\]\[lockable\]" type="boolean" required=false %}
+A flag indicating whether the Slot can be locked.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="metadata" type="object" required=false %}
-Set of key-value data that you can attach to the object
+{% api-method-parameter name="slots\[\]\[capacity\]" type="integer" required=true %}
+The maximum amount of active Appointments that the Slot can contain.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="slots\[\]\[end\_date\]" type="string" required=true %}
+The date at which the Slot ends, in UTC in ISO 8601.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
+The Booking Block’s id \(uuid\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="slots\[\]\[start\_date\]" type="string" required=true %}
+The date at which the Slot begins, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -43,28 +54,29 @@ Set of key-value data that you can attach to the object
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.bookingBlock.create" %}
-```scheme
+{% code title="public.slot.add" %}
+```javascript
 {
-  "data": {
-    "_object": "booking_block",
-    "booking_disabled_before": 0,
-    "created_at": "2020-12-12T14:53:39.931Z",
-    "id": "e185732d-8db3-4d71-ac2e-7fce4afe2e95",
-    "metadata": {
-      "foo": "bar"
-    },
-    "name": "test",
-    "num_active_appointments": 0,
-    "num_appointments": 0,
-    "num_available_slots": 0,
-    "num_cancelled_appointments": 0,
-    "num_slots": 0,
-    "short_id": "aG91djROSzM",
-    "status": "draft",
-    "timezone": "America/New_York",
-    "updated_at": "2020-12-12T14:53:39.931Z"
-  },
+  "data": [
+    {
+      "_object": "slot",
+      "available": true,
+      "booking_block_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
+      "capacity": 1,
+      "created_at": "2020-12-19T15:44:22.854Z",
+      "end_date": "2020-10-21T22:50:00+02:00",
+      "id": "3751095a-b4ef-41a3-98a3-b8a0eecfc332",
+      "lockable": null,
+      "locked_until": null,
+      "metadata": {},
+      "num_active_appointments": 0,
+      "num_appointments": 0,
+      "num_cancelled_appointments": 0,
+      "start_date": "2020-10-21T22:30:00+02:00",
+      "status": "active",
+      "updated_at": "2020-12-19T15:44:22.854Z"
+    }
+  ],
   "meta": {},
   "success": true
 }
