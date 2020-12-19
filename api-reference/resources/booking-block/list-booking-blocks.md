@@ -1,8 +1,8 @@
 ---
-description: Returns list of all booking blocks.
+description: Returns list of all Booking Blocks.
 ---
 
-# List all Booking Blocks
+# List Booking Blocks
 
 {% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks" %}
 {% api-method-summary %}
@@ -30,7 +30,7 @@ The Booking Block’s name
 The status of the Booking Block could be either `draft` or `published`
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="page" type="number" required=true %}
+{% api-method-parameter name="page" type="integer" required=true %}
 Page number of objects to return
 {% endapi-method-parameter %}
 

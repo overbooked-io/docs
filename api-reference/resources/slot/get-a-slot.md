@@ -41,7 +41,6 @@ Set of key-value data that you can attach to the Slot
 {% api-method-parameter name="slots\[\]\[lockable\]" type="boolean" required=false %}
 A flag indicating whether the Slot can be locked.
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -83,6 +82,4 @@ A flag indicating whether the Slot can be locked.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

@@ -45,7 +45,6 @@ Set of key-value data that you can attach to the Slot
 {% api-method-parameter name="slots\[\]\[lockable\]" type="boolean" required=false %}
 A flag indicating whether the Slot can be locked.
 {% endapi-method-parameter %}
-
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -67,7 +66,7 @@ A flag indicating whether the Slot can be locked.
       "created_at": "2020-12-19T15:44:22.854Z",
       "end_date": "2020-10-21T22:50:00+02:00",
       "id": "3751095a-b4ef-41a3-98a3-b8a0eecfc332",
-      "lockable": null,
+      "lockable": true,
       "locked_until": null,
       "metadata": {},
       "num_active_appointments": 0,
@@ -87,6 +86,4 @@ A flag indicating whether the Slot can be locked.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
