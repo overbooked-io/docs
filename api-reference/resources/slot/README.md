@@ -4,7 +4,7 @@ description: The Slot is a period of time for which Appointments can be booked.
 
 # Slot
 
-The Slot is a bucket for Appointments, embedded in time. It has the `start_date` and the `end_date`. It has a maximum `capacity` which defines how many [Appointments](../appointment/) can be booked in a given Slot. It can have 2 statuses: `active` and `disabled`. It can be extendec via `metadata` property to store data that refer to any entities from your system.
+The Slot is a bucket for Appointments, embedded in time. It has the `start_date` and the `end_date`. It has a maximum `capacity` which defines how many [Appointments](../appointment/) can be booked in a given Slot, and can have 2 statuses: `active` and `disabled`. It can be also extended via `metadata` property to store data that refer to any entities from your system.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
