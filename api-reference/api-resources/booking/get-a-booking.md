@@ -1,5 +1,5 @@
 ---
-description: Creates new Booking object.
+description: Retrieves a Booking details.
 ---
 
 # Get a Booking

@@ -1,5 +1,5 @@
 ---
-description: Creates new Booking object.
+description: Returns paginated list of all Bookings matched by given filters.
 ---
 
 # List Bookings
