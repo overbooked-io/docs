@@ -1,12 +1,14 @@
 ---
-description: Creates new Booking object.
+description: >-
+  Updates the specified Booking by setting the values of the parameters passed.
+  Any parameters not provided will be left unchanged.
 ---
 
 # Update a Booking
 
-{% api-method method="post" host="https://api.overbooked.io" path="/bookings" %}
+{% api-method method="patch" host="https://api.overbooked.io" path="/bookings/:booking\_id" %}
 {% api-method-summary %}
-public.booking.create
+public.booking.update
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -15,6 +17,12 @@ public.booking.create
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="booking\_id" type="string" required=true %}
+Unique identifier of the Booking
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer `{public_key|secret_key}`
@@ -22,14 +30,6 @@ Bearer `{public_key|secret_key}`
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="slot\_id" type="string" required=true %}
-The Slot's id \(uuid\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="lock\_key" type="string" required=false %}
-A unique, random string used to distinguish a lock. The lock key in this given operation is used to unlock the Slot's lock.
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="metadata" type="object" required=false %}
 Set of key-value data that you can attach to the Booking
 {% endapi-method-parameter %}
@@ -42,7 +42,7 @@ Set of key-value data that you can attach to the Booking
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.booking.create" %}
+{% code title="public.booking.update" %}
 ```javascript
 {
   "data": {
