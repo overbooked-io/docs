@@ -1,14 +1,18 @@
 ---
-description: 'Creates new Booking object.'
+description: Creates new Booking object.
 ---
+
 # Create Booking
 
 {% api-method method="post" host="https://api.overbooked.io" path="/bookings" %}
 {% api-method-summary %}
 public.booking.create
 {% endapi-method-summary %}
+
 {% api-method-description %}
+
 {% endapi-method-description %}
+
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
@@ -16,31 +20,28 @@ public.booking.create
 Bearer `{public_key|secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
 {% api-method-body-parameters %}
-{% api-method-parameter name="resource\_id" type="string" required=true %}
-The Resource's id \(uuid\)
+{% api-method-parameter name="slot\_id" type="string" required=true %}
+The Slot's id \(uuid\)
 {% endapi-method-parameter %}
-{% api-method-parameter name="slots\[\]\[start\_date\]" type="string" required=true %}
-The date at which the Slot begins, in UTC in ISO 8601.
+
+{% api-method-parameter name="lock\_key" type="string" required=false %}
+A unique, random string used to distinguish a lock. The lock key in this given operation is used to unlock the Slot's lock.
 {% endapi-method-parameter %}
-{% api-method-parameter name="slots\[\]\[end\_date\]" type="string" required=true %}
-The date at which the Slot ends, in UTC in ISO 8601.
-{% endapi-method-parameter %}
-{% api-method-parameter name="slots\[\]\[capacity\]" type="integer" required=true %}
-The maximum amount of active Bookings that the Slot can contain.
-{% endapi-method-parameter %}
-{% api-method-parameter name="slots\[\]\[metadata\]" type="object" required=false %}
-Set of key-value data that you can attach to the Slot
-{% endapi-method-parameter %}
-{% api-method-parameter name="slots\[\]\[lockable\]" type="boolean" required=false %}
-A flag indicating whether the Slot can be locked.
+
+{% api-method-parameter name="metadata" type="object" required=false %}
+Set of key-value data that you can attach to the Booking
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
+
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
+
 {% endapi-method-response-example-description %}
+
 {% code title="public.booking.create" %}
 ```javascript
 {
@@ -63,3 +64,4 @@ A flag indicating whether the Slot can be locked.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
