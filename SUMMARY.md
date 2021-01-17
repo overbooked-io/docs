@@ -28,7 +28,7 @@
     * [Unlock a Slot](api-reference/api-resources/slot/unlock-a-slot.md)
     * [Delete a Slot](api-reference/api-resources/slot/delete-a-slot.md)
   * [Booking](api-reference/api-resources/booking/README.md)
-    * [Create Booking](api-reference/api-resources/booking/create-booking.md)
+    * [Create a Booking](api-reference/api-resources/booking/create-a-booking.md)
     * [List Bookings](api-reference/api-resources/booking/list-bookings.md)
     * [Get a Booking](api-reference/api-resources/booking/get-a-booking.md)
     * [Update a Booking](api-reference/api-resources/booking/update-a-booking.md)
