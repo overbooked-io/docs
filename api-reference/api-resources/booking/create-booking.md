@@ -1,23 +1,23 @@
 ---
-description: 'Creates new Slot objects, that can be used to create Bookings.'
+description: 'Creates new Booking object.'
 ---
 
-# Create Slots
+# Create Booking
 
-{% api-method method="post" host="https://api.overbooked.io" path="/slots" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/bookings" %}
 {% api-method-summary %}
-public.slot.create
+public.booking.create
 {% endapi-method-summary %}
 
 {% api-method-description %}
-It accepts an array \(`slots`\) of partial Slot objects - including fields: `start_date`, `end_date`, `capacity`, `lockable`, `metadata`
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer `{secret_key}`
+Bearer `{public_key|secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -54,29 +54,19 @@ A flag indicating whether the Slot can be locked.
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.slot.create" %}
+{% code title="public.booking.create" %}
 ```javascript
 {
-  "data": [
-    {
-      "_object": "slot",
-      "available": true,
-      "resource_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
-      "capacity": 1,
-      "created_at": "2020-12-19T15:44:22.854Z",
-      "end_date": "2020-10-21T22:50:00+02:00",
-      "id": "3751095a-b4ef-41a3-98a3-b8a0eecfc332",
-      "lockable": true,
-      "locked_until": null,
-      "metadata": {},
-      "num_active_bookings": 0,
-      "num_bookings": 0,
-      "num_cancelled_bookings": 0,
-      "start_date": "2020-10-21T22:30:00+02:00",
-      "status": "active",
-      "updated_at": "2020-12-19T15:44:22.854Z"
-    }
-  ],
+  "data": {
+    "_object": "booking",
+    "resource_id": "f968320f-300e-4da4-8fbb-6c5d8d9cc93a",
+    "created_at": "2020-12-10T18:55:24.555Z",
+    "id": "b1ad4b5b-2e94-44aa-be51-66afb8d2da13",
+    "metadata": {},
+    "slot_id": "e943cb7b-d17c-4271-85d9-bd2b87008c6e",
+    "status": "active",
+    "updated_at": "2020-12-10T18:55:24.555Z"
+  },
   "meta": {},
   "success": true
 }
