@@ -18,9 +18,9 @@ You can also use `metadata` property to store data that refer to any entities fr
 | `status` | string | The status of the Resource is either `draft` or `published`. When the status is equal to `draft`, then [Slots](../slot/) are not available to be booked. |
 | `timezone` | string | The output timezone for all timestamps in the Resource. A list of possible time zone values is maintained at the [IANA Time Zone Database](http://www.iana.org/time-zones). |
 | `short_id` | string | Short representation of the property `id`. |
-| `num_bookings` | integer | A number of all [Bookings](../booking/) booked on [Slots](../slot/) within the Resource. |
-| `num_active_bookings` | integer | A number of active [Bookings](../booking/) \(with status `active`\) booked on [Slots](../slot/) within the Resource. |
-| `num_cancelled_bookings` | integer | A number of cancelled [Bookings](../booking/) \(with status `cancelled`\) booked on [Slots](../slot/) within the Resource. |
+| `num_bookings` | integer | A number of all [Bookings](../booking.md) booked on [Slots](../slot/) within the Resource. |
+| `num_active_bookings` | integer | A number of active [Bookings](../booking.md) \(with status `active`\) booked on [Slots](../slot/) within the Resource. |
+| `num_cancelled_bookings` | integer | A number of cancelled [Bookings](../booking.md) \(with status `cancelled`\) booked on [Slots](../slot/) within the Resource. |
 | `num_slots` | integer | A number of all [Slots](../slot/) created within the Resource. |
 | `num_available_slots` | integer | A number of all available [Slots](../slot/) \(available to book\) created within the Resource. |
 | `booking_disabled_before` | integer | The number of seconds before the [Slot](../slot/) starts when the booking option is disabled. |
