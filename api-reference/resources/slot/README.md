@@ -9,7 +9,7 @@ The Slot is a bucket for Appointments, embedded in time. It has the `start_date`
 | Property | Type | Description |
 | :--- | :--- | :--- |
 | `id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the Slot. |
-| `booking_block_id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the [Booking Block](../booking-block/) that Slot is assigned to. |
+| `resource_id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the [Resource](../resource/) that Slot is assigned to. |
 | `available` | boolean | A flag indicating whether the Slot is available for booking. |
 | `metadata` | [metadata](../../metadata.md) | Set of key-value data that you can attach to the Slot. This can be useful for storing additional information about the object in a structured format. |
 | `start_date` | date | The date at which the Slot begins, in UTC in ISO 8601. |
@@ -31,7 +31,7 @@ The Slot is a bucket for Appointments, embedded in time. It has the `start_date`
 {
   "_object": "slot",
   "available": true,
-  "booking_block_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
+  "resource_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
   "capacity": 1,
   "created_at": "2020-12-10T18:55:08.833Z",
   "end_date": "2020-12-10T19:15:08.825Z",

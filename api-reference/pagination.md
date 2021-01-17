@@ -29,7 +29,7 @@ Overbooked API utilizes numeric-based pagination via the `limit` and `page` para
 ### Example
 
 ```bash
-curl https://api.overbooked.io/booking-blocks?limit=20&page=1 \
+curl https://api.overbooked.io/resources?limit=20&page=1 \
     -H 'Authorization: Bearer <api_key>'
 ```
 
@@ -37,7 +37,7 @@ curl https://api.overbooked.io/booking-blocks?limit=20&page=1 \
 {
   "data": [
     {
-      "_object": "booking_block",
+      "_object": "resource",
       "booking_disabled_before": 0,
       "created_at": "2020-12-10T18:55:08.749Z",
       "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
@@ -54,7 +54,7 @@ curl https://api.overbooked.io/booking-blocks?limit=20&page=1 \
       "updated_at": "2020-12-10T18:55:08.822Z"
     },
     {
-      "_object": "booking_block",
+      "_object": "resource",
       "booking_disabled_before": 0,
       "created_at": "2020-12-10T18:55:08.822Z",
       "id": "5b003c67-f69f-471b-9268-3896a9a3df29",

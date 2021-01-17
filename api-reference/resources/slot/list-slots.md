@@ -43,7 +43,7 @@ The date at which the Slot ends, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="booking\_block\_id" type="string" required=false %}
-The Booking Block’s id \(uuid\)
+The Resource’s id \(uuid\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -61,7 +61,7 @@ The Booking Block’s id \(uuid\)
     {
       "_object": "slot",
       "available": true,
-      "booking_block_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
+      "resource_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
       "capacity": 1,
       "created_at": "2020-12-19T15:44:22.854Z",
       "end_date": "2020-10-21T22:50:00+02:00",
@@ -79,7 +79,7 @@ The Booking Block’s id \(uuid\)
     {
       "_object": "slot",
       "available": true,
-      "booking_block_id": "1575a50d-3dd8-4526-b721-dcfe9e3c436a",
+      "resource_id": "1575a50d-3dd8-4526-b721-dcfe9e3c436a",
       "capacity": 1,
       "created_at": "2020-12-10T18:55:08.958Z",
       "end_date": "2020-12-10T19:15:08.952Z",

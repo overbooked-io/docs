@@ -1,12 +1,12 @@
 ---
-description: Returns paginated list of all Booking Blocks matched by given filters.
+description: Returns paginated list of all Resources matched by given filters.
 ---
 
-# List Booking Blocks
+# List Resources
 
-{% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks" %}
+{% api-method method="get" host="https://api.overbooked.io" path="/resources" %}
 {% api-method-summary %}
-public.bookingBlock.list
+public.resource.list
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -23,11 +23,11 @@ Bearer `{public_key|secret_key}`
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="name" type="string" required=false %}
-The Booking Block’s name
+The Resource’s name
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="status" type="string" required=false %}
-The status of the Booking Block could be either `draft` or `published`
+The status of the Resource could be either `draft` or `published`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page" type="integer" required=true %}
@@ -46,12 +46,12 @@ Number of items to return per page
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.bookingBlock.list" %}
+{% code title="public.resource.list" %}
 ```scheme
 {
   "data": [
     {
-      "_object": "booking_block",
+      "_object": "resource",
       "booking_disabled_before": 0,
       "created_at": "2020-12-10T18:55:08.749Z",
       "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
@@ -68,7 +68,7 @@ Number of items to return per page
       "updated_at": "2020-12-10T18:55:08.822Z"
     },
     {
-      "_object": "booking_block",
+      "_object": "resource",
       "booking_disabled_before": 0,
       "created_at": "2020-12-10T18:55:08.822Z",
       "id": "5b003c67-f69f-471b-9268-3896a9a3df29",

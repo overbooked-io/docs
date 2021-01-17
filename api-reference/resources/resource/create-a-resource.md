@@ -1,14 +1,14 @@
 ---
 description: >-
-  Creates new Booking Block object, that can be used to create Slots and
+  Creates new Resource object, that can be used to create Slots and
   Appointments within it.
 ---
 
-# Create a Booking Block
+# Create a Resource
 
-{% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/resources" %}
 {% api-method-summary %}
-public.bookingBlock.create
+public.resource.create
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -25,11 +25,11 @@ Bearer `{secret_key}`
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="name" type="string" required=true %}
-The Booking Block’s name, meant to be displayable publicly
+The Resource’s name, meant to be displayable publicly
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="timezone" type="string" required=true %}
-The output timezone for all timestamps in the Booking Block
+The output timezone for all timestamps in the Resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="metadata" type="object" required=false %}
@@ -44,11 +44,11 @@ Set of key-value data that you can attach to the object
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.bookingBlock.create" %}
+{% code title="public.resource.create" %}
 ```scheme
 {
   "data": {
-    "_object": "booking_block",
+    "_object": "resource",
     "booking_disabled_before": 0,
     "created_at": "2020-12-12T14:53:39.931Z",
     "id": "e185732d-8db3-4d71-ac2e-7fce4afe2e95",

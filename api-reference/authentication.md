@@ -21,7 +21,7 @@ To undergo the authentication process, provide your API key in `Authorization` H
 {% tabs %}
 {% tab title="cURL" %}
 ```bash
-curl https://api.overbooked.io/booking-blocks \
+curl https://api.overbooked.io/resources \
   -H 'Authorization: Bearer sk_da57d6a3fc6dc1c38877c99b5623c5a7ea99d305cb0ff0d072f3fafd99dd31c8'
 ```
 {% endtab %}

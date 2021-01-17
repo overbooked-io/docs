@@ -37,7 +37,7 @@ The response from the API may contain four fields:`data`, `meta`, `error` and `s
 {
   "data": {
     "available": false,
-    "booking_block_id": "c5034ce4-d84e-4765-95e2-af5fc70e329c",
+    "resource_id": "c5034ce4-d84e-4765-95e2-af5fc70e329c",
     "capacity": 1,
     "created_at": "2020-12-01T05:06:30.729Z",
     "end_date": "2020-12-01T05:26:30.717Z",

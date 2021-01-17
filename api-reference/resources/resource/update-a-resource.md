@@ -1,12 +1,14 @@
 ---
-description: Retrieves a Booking Block details.
+description: >-
+  Updates the specified Resource by setting the values of the parameters
+  passed. Any parameters not provided will be left unchanged.
 ---
 
-# Get a Booking Block
+# Update a Resource
 
-{% api-method method="get" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id" %}
+{% api-method method="patch" host="https://api.overbooked.io" path="/resources/:booking\_block\_id" %}
 {% api-method-summary %}
-public.bookingBlock.get
+public.resource.update
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -17,15 +19,33 @@ public.bookingBlock.get
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="booking\_block\_id" type="string" required=true %}
-Unique identifier of the Booking Block
+Unique identifier of the Resource
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer `{public_key|secret_key}`
+Bearer `{secret_key}`
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="booking\_disabled\_before" type="integer" required=false %}
+The number of seconds before the Slot starts when the booking option is disabled
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="metadata" type="object" required=false %}
+Set of key-value data that you can attach to the Resource
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="timezone" type="string" required=false %}
+The output timezone for all timestamps in the Resource
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="name" type="string" required=false %}
+The Resource’s name
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -34,11 +54,11 @@ Bearer `{public_key|secret_key}`
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.bookingBlock.get" %}
+{% code title="public.resource.update" %}
 ```scheme
 {
   "data": {
-    "_object": "booking_block",
+    "_object": "resource",
     "booking_disabled_before": 0,
     "created_at": "2020-12-10T18:55:08.749Z",
     "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
@@ -51,8 +71,8 @@ Bearer `{public_key|secret_key}`
     "num_slots": 7,
     "short_id": "ajdCcXlwTHd",
     "status": "published",
-    "timezone": "Europe/Warsaw",
-    "updated_at": "2020-12-10T18:55:08.822Z"
+    "timezone": "America/New_York",
+    "updated_at": "2020-12-12T16:27:47.590Z"
   },
   "meta": {},
   "success": true

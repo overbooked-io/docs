@@ -40,7 +40,7 @@ Bearer `{secret_key}`
   "data": {
     "_object": "slot",
     "available": false,
-    "booking_block_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
+    "resource_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
     "capacity": 1,
     "created_at": "2020-12-19T15:44:22.854Z",
     "end_date": "2020-10-21T22:50:00+02:00",

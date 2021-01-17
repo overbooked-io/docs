@@ -1,12 +1,14 @@
 ---
-description: Reverts the status from published to draft.
+description: >-
+  Changes the status from draft to published and makes all assigned Slots
+  publicly visible.
 ---
 
-# Convert a Booking Block to draft
+# Publish a Resource
 
-{% api-method method="post" host="https://api.overbooked.io" path="/booking-blocks/:booking\_block\_id/convert-draft" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/resources/:booking\_block\_id/publish" %}
 {% api-method-summary %}
-public.bookingBlock.convertToDraft
+public.resource.publish
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -17,7 +19,7 @@ public.bookingBlock.convertToDraft
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="booking\_block\_id" type="string" required=true %}
-Unique identifier of the Booking Block
+Unique identifier of the Resource
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -34,11 +36,11 @@ Bearer `{secret_key}`
 
 {% endapi-method-response-example-description %}
 
-{% code title="public.bookingBlock.convertToDraft" %}
+{% code title="public.resource.publish" %}
 ```scheme
 {
   "data": {
-    "_object": "booking_block",
+    "_object": "resource",
     "booking_disabled_before": 0,
     "created_at": "2020-12-10T18:55:08.749Z",
     "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
@@ -50,7 +52,7 @@ Bearer `{secret_key}`
     "num_cancelled_appointments": 0,
     "num_slots": 7,
     "short_id": "ajdCcXlwTHd",
-    "status": "draft",
+    "status": "published",
     "timezone": "America/New_York",
     "updated_at": "2020-12-12T16:27:47.590Z"
   },

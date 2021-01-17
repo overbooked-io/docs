@@ -39,8 +39,8 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E018 | 403 | Organization invitation not found |
 | E019 | 422 | Organization name cannot include any special characters |
 | E020 | 422 | Credits top up invalid amount |
-| E021 | 422 | Invalid booking block date format. Allowed: YYYY-MM-DD |
-| E022 | 422 | Invalid booking block timezone, should be correct TZ database name, eg. 'America/New\_York' |
+| E021 | 422 | Invalid resource date format. Allowed: YYYY-MM-DD |
+| E022 | 422 | Invalid resource timezone, should be correct TZ database name, eg. 'America/New\_York' |
 | E023 | 422 | Slot's start date should be before end date |
 | E024 | 422 | Slots should not overlap |
 | E025 | 404 | Slot not found |
@@ -70,7 +70,7 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E049 | 422 | Cannot book appointment, not enough slot capacity |
 | E050 | 422 | Cannot book appointment, slot locked |
 | E051 | 422 | Cannot book appointment, slot disabled |
-| E052 | 404 | Booking Block not found |
+| E052 | 404 | Resource not found |
 | E053 | 403 | Environment is deactivated |
 | E054 | 403 | Organization is blocked |
 | E055 | 401 | Unauthorized, API Key invalid |
@@ -79,5 +79,5 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E058 | 422 | The booking\_disabled\_before property should be higher than 0 |
 | E059 | 403 | Slot cannot be unlocked, lock\_key invalid |
 | E060 | 422 | Slot cannot be deleted due to existing appointments assigned to it |
-| E061 | 422 | Cannot book appointment, booking block is not published |
+| E061 | 422 | Cannot book appointment, resource is not published |
 
