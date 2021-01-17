@@ -6,7 +6,7 @@ description: The Resource is a bucket for Slots and Bookings.
 
 The Resource is not embedded in a time, so that is very flexible in usage. You control your booking availability by using Slots and their properties.
 
-The Resource can have 2 statuses: `draft` and `published`. When the status is `draft`, it means that it's not visible publicly and none can book Bookings within it. You can easily publish it to make it available.
+The Resource can have 2 statuses: `draft` and `published`. When the status is `draft`, it means that it's not visible publicly and none can create Bookings within it. You can easily publish it to make it available.
 
 You can also use `metadata` property to store data that refer to any entities from your system.
 
