@@ -17,6 +17,7 @@
     * [Update a Resource](api-reference/api-resources/resource/update-a-resource.md)
     * [Publish a Resource](api-reference/api-resources/resource/publish-a-resource.md)
     * [Convert a Resource to draft](api-reference/api-resources/resource/convert-a-resource-to-draft.md)
+    * [Delete a Resource](api-reference/api-resources/resource/delete-a-resource.md)
   * [Slot](api-reference/api-resources/slot/README.md)
     * [Create Slots](api-reference/api-resources/slot/create-slots.md)
     * [List Slots](api-reference/api-resources/slot/list-slots.md)

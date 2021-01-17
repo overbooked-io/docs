@@ -17,7 +17,7 @@ public.resource.get
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="resource\_id" type="string" required=true %}
-Unique identifier of the Resource
+ Unique identifier of the Resource
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
@@ -63,4 +63,6 @@ Bearer `{public_key|secret_key}`
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
