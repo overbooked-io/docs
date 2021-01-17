@@ -1,12 +1,12 @@
 ---
-description: 'Creates new Slot objects, that can be used to book Bookings.'
+description: 'Creates new Slot objects, that can be used to create Bookings.'
 ---
 
-# Add Slots
+# Create Slots
 
 {% api-method method="post" host="https://api.overbooked.io" path="/slots" %}
 {% api-method-summary %}
-public.slot.add
+public.slot.create
 {% endapi-method-summary %}
 
 {% api-method-description %}
