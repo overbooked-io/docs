@@ -4,7 +4,7 @@ description: Creates new Booking object.
 
 # List Bookings
 
-{% api-method method="post" host="https://api.overbooked.io" path="/bookings" %}
+{% api-method method="get" host="https://api.overbooked.io" path="/bookings" %}
 {% api-method-summary %}
 public.booking.list
 {% endapi-method-summary %}
