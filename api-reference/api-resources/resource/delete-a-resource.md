@@ -1,5 +1,5 @@
 ---
-description: Permanently deletes the Resource.
+description: Permanently deletes the Resource with all Slots and all Bookings within it.
 ---
 
 # Delete a Resource

@@ -1,5 +1,5 @@
 ---
-description: Permanently deletes the Slot.
+description: Permanently deletes the Slot and all Bookings assigned to it.
 ---
 
 # Delete a Slot
