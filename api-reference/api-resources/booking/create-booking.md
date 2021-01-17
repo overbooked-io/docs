@@ -2,7 +2,7 @@
 description: Creates new Booking object.
 ---
 
-# Create a Booking
+# Create Booking
 
 {% api-method method="post" host="https://api.overbooked.io" path="/bookings" %}
 {% api-method-summary %}
