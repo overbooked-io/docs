@@ -1,7 +1,7 @@
 ---
 description: >-
-  Creates new Resource object, that can be used to create Slots and
-  Bookings within it.
+  Creates new Resource object, that can be used to create Slots and Bookings
+  within it.
 ---
 
 # Create a Resource
@@ -75,6 +75,4 @@ Set of key-value data that you can attach to the object
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 

@@ -33,7 +33,7 @@ All API requests must be made over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Sec
 
 ### Public key and secret key
 
-When you create the Overbooked organization, a public key and secret key will be created for you. These are located in your [environment settings](https://dashboard.overbooked.io/settings/environments) in the Overbooked Dashboard. 
+When you create the Overbooked organization, a public key and secret key will be created for you. These are located in your [environment settings](https://dashboard.overbooked.io/settings/environments) in the Overbooked Dashboard.
 
 ![](../.gitbook/assets/screenshot-from-2020-12-08-20-14-43.png)
 

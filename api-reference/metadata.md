@@ -1,15 +1,15 @@
 ---
 description: >-
-  Main objects available in Overbooked API (like Resources, Slots,
-  Bookings) have an updatable metadata property, which can be used to attach
-  custom key-value data.
+  Main objects available in Overbooked API (like Resources, Slots, Bookings)
+  have an updatable metadata property, which can be used to attach custom
+  key-value data.
 ---
 
 # Metadata
 
 ## Updatable metadata property
 
-Metadata is useful for storing additional, structured information on an object. As an example, you could store the user's email or corresponding unique identifier from your system on eg. an [Booking](resources/booking/) object. You can utilize it in any way you want. The Overbooked API is very flexible in this regard.
+Metadata is useful for storing additional, structured information on an object. As an example, you could store the user's email or corresponding unique identifier from your system on eg. an [Booking](api-resources/booking/) object. You can utilize it in any way you want. The Overbooked API is very flexible in this regard.
 
 ### Limitations
 

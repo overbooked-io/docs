@@ -1,7 +1,7 @@
 ---
 description: >-
-  Updates the specified Resource by setting the values of the parameters
-  passed. Any parameters not provided will be left unchanged.
+  Updates the specified Resource by setting the values of the parameters passed.
+  Any parameters not provided will be left unchanged.
 ---
 
 # Update a Resource

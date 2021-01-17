@@ -29,7 +29,7 @@ https://api.overbooked.io
 
 {% page-ref page="api-reference/metadata.md" %}
 
-{% page-ref page="api-reference/resources/" %}
+{% page-ref page="api-reference/api-resources/" %}
 
 
 
