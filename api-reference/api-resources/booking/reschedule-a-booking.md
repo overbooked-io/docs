@@ -1,5 +1,5 @@
 ---
-description: Lorem ipsum
+description: Reschedules the Booking to a different Slot.
 ---
 
 # Reschedule a Booking
