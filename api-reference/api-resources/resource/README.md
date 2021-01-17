@@ -59,4 +59,5 @@ You can also use `metadata` property to store data that refer to any entities fr
 * [`PATCH /resources/:resource_id`](update-a-resource.md)
 * [`POST /resources/:resource_id/publish`](publish-a-resource.md)
 * [`POST /resources/:resource_id/convert-draft`](convert-a-resource-to-draft.md)
+* [`DELETE /resources/:resource_id`](delete-a-resource.md)
 
