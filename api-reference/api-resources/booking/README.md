@@ -11,14 +11,14 @@ Lorem ipsum
 | `id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the Booking. |
 | `resource_id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the [Resource](../resource/) that Booking is assigned to. |
 | `slot_id` | [uuid](https://en.wikipedia.org/wiki/Universally_unique_identifier) | Unique identifier for the [Slot](../slot/) that Booking is assigned to. |
-| `metadata` | [metadata](../../metadata.md) | Set of key-value data that you can attach to the Slot. This can be useful for storing additional information about the object in a structured format. |
+| `metadata` | [metadata](../../metadata.md) | Set of key-value data that you can attach to the Booking. This can be useful for storing additional information about the object in a structured format. |
 | `status` | string | The status of the Booking is either `active` or `cancelled`. |
-| `updated_at` | date | The date at which the Slot was last updated, in UTC in ISO 8601. |
-| `created_at` | date | The date at which the Slot was created, in UTC in ISO 8601. |
+| `updated_at` | date | The date at which the Booking was last updated, in UTC in ISO 8601. |
+| `created_at` | date | The date at which the Booking was created, in UTC in ISO 8601. |
 
 ## Example
 
-{% code title="Slot" %}
+{% code title="Booking" %}
 ```javascript
 {
   "_object": "booking",
