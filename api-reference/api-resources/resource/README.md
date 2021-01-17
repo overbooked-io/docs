@@ -8,7 +8,7 @@ The Resource is not embedded in a time, so that is very flexible in usage. You c
 
 The Resource can have 2 statuses: `draft` and `published`. When the status is `draft`, it means that it's not visible publicly and none can create Bookings within it. You can easily publish it to make it available.
 
-You can also use `metadata` property to store data that refer to any entities from your system.
+You can also use [`metadata`](../../metadata.md) property to store data that refer to any entities from your system.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |

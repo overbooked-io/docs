@@ -1,10 +1,14 @@
 ---
-description: Lorem ipsum
+description: An arrangement placed on a particular Slot.
 ---
 
 # Booking
 
-Lorem ipsum
+The Booking can be utilized as any entity you need in your application. This can be a hotel room, flight, or maybe an appointment. It's up to you.  
+  
+The Booking has two possible statuses: `active` and `cancelled`. When the Booking is `cancelled`, it frees up the Slot, so that other Bookings can be created on it.  
+  
+You can also use [`metadata`](../../metadata.md) property to store data that refer to any entities from your system.
 
 | Property | Type | Description |
 | :--- | :--- | :--- |
