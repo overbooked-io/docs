@@ -1,5 +1,5 @@
 ---
-description: Deletes permanently Slot.
+description: Permanently deletes the Slot.
 ---
 
 # Delete a Slot
