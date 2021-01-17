@@ -27,6 +27,6 @@
     * [Lock a Slot](api-reference/resources/slot/lock-a-slot.md)
     * [Unlock a Slot](api-reference/resources/slot/unlock-a-slot.md)
     * [Delete a Slot](api-reference/resources/slot/delete-a-slot.md)
-  * [Appointment](api-reference/resources/appointment/README.md)
-    * [Untitled](api-reference/resources/appointment/untitled.md)
+  * [Booking](api-reference/resources/booking/README.md)
+    * [Untitled](api-reference/resources/booking/untitled.md)
 

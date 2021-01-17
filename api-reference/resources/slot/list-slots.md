@@ -42,7 +42,7 @@ The date at which the Slot begins, in UTC in ISO 8601.
 The date at which the Slot ends, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="booking\_block\_id" type="string" required=false %}
+{% api-method-parameter name="resource\_id" type="string" required=false %}
 The Resource’s id \(uuid\)
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -69,9 +69,9 @@ The Resource’s id \(uuid\)
       "lockable": true,
       "locked_until": null,
       "metadata": {},
-      "num_active_appointments": 0,
-      "num_appointments": 0,
-      "num_cancelled_appointments": 0,
+      "num_active_bookings": 0,
+      "num_bookings": 0,
+      "num_cancelled_bookings": 0,
       "start_date": "2020-10-21T22:30:00+02:00",
       "status": "active",
       "updated_at": "2020-12-19T15:44:22.854Z"
@@ -87,9 +87,9 @@ The Resource’s id \(uuid\)
       "lockable": true,
       "locked_until": null,
       "metadata": {},
-      "num_active_appointments": 0,
-      "num_appointments": 0,
-      "num_cancelled_appointments": 0,
+      "num_active_bookings": 0,
+      "num_bookings": 0,
+      "num_cancelled_bookings": 0,
       "start_date": "2020-12-10T19:05:08.952Z",
       "status": "active",
       "updated_at": "2020-12-10T18:55:08.958Z"

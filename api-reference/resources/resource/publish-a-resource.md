@@ -6,7 +6,7 @@ description: >-
 
 # Publish a Resource
 
-{% api-method method="post" host="https://api.overbooked.io" path="/resources/:booking\_block\_id/publish" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/resources/:resource\_id/publish" %}
 {% api-method-summary %}
 public.resource.publish
 {% endapi-method-summary %}
@@ -18,7 +18,7 @@ public.resource.publish
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
+{% api-method-parameter name="resource\_id" type="string" required=true %}
 Unique identifier of the Resource
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -46,10 +46,10 @@ Bearer `{secret_key}`
     "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
     "metadata": {},
     "name": "test_1",
-    "num_active_appointments": 7,
-    "num_appointments": 7,
+    "num_active_bookings": 7,
+    "num_bookings": 7,
     "num_available_slots": 0,
-    "num_cancelled_appointments": 0,
+    "num_cancelled_bookings": 0,
     "num_slots": 7,
     "short_id": "ajdCcXlwTHd",
     "status": "published",

@@ -1,5 +1,5 @@
 ---
-description: 'Creates new Slot objects, that can be used to book Appointments.'
+description: 'Creates new Slot objects, that can be used to book Bookings.'
 ---
 
 # Add Slots
@@ -22,7 +22,7 @@ Bearer `{secret_key}`
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
+{% api-method-parameter name="resource\_id" type="string" required=true %}
 The Resource’s id \(uuid\)
 {% endapi-method-parameter %}
 
@@ -35,7 +35,7 @@ The date at which the Slot ends, in UTC in ISO 8601.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="slots\[\]\[capacity\]" type="integer" required=true %}
-The maximum amount of active Appointments that the Slot can contain.
+The maximum amount of active Bookings that the Slot can contain.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="slots\[\]\[metadata\]" type="object" required=false %}
@@ -69,9 +69,9 @@ A flag indicating whether the Slot can be locked.
       "lockable": true,
       "locked_until": null,
       "metadata": {},
-      "num_active_appointments": 0,
-      "num_appointments": 0,
-      "num_cancelled_appointments": 0,
+      "num_active_bookings": 0,
+      "num_bookings": 0,
+      "num_cancelled_bookings": 0,
       "start_date": "2020-10-21T22:30:00+02:00",
       "status": "active",
       "updated_at": "2020-12-19T15:44:22.854Z"

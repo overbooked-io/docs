@@ -10,7 +10,7 @@ public.slot.delete
 {% endapi-method-summary %}
 
 {% api-method-description %}
-All Appointments booked on the Slot should be deleted first, otherwise the operation will be rejected.
+All Bookings booked on the Slot should be deleted first, otherwise the operation will be rejected.
 {% endapi-method-description %}
 
 {% api-method-spec %}

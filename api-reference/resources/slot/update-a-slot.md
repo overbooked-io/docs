@@ -47,7 +47,7 @@ A flag indicating whether the Slot can be locked. If `lockable` equals `false` t
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="capacity" type="integer" required=false %}
-The maximum amount of active Appointments that the Slot can contain.
+The maximum amount of active Bookings that the Slot can contain.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -72,9 +72,9 @@ The maximum amount of active Appointments that the Slot can contain.
     "lockable": true,
     "locked_until": null,
     "metadata": {},
-    "num_active_appointments": 0,
-    "num_appointments": 0,
-    "num_cancelled_appointments": 0,
+    "num_active_bookings": 0,
+    "num_bookings": 0,
+    "num_cancelled_bookings": 0,
     "start_date": "2020-10-21T22:30:00+02:00",
     "status": "active",
     "updated_at": "2020-12-19T15:44:22.854Z"

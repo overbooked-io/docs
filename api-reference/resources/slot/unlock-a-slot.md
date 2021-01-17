@@ -54,9 +54,9 @@ A unique, random string used to distinguish a lock, provided during locking oper
     "lockable": true,
     "locked_until": null,
     "metadata": {},
-    "num_active_appointments": 0,
-    "num_appointments": 0,
-    "num_cancelled_appointments": 0,
+    "num_active_bookings": 0,
+    "num_bookings": 0,
+    "num_cancelled_bookings": 0,
     "start_date": "2020-10-21T22:30:00+02:00",
     "status": "active",
     "updated_at": "2020-12-19T15:44:22.854Z"

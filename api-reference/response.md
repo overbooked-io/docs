@@ -47,9 +47,9 @@ The response from the API may contain four fields:`data`, `meta`, `error` and `s
     "metadata": {
       "user_email": "john.doe@example.com"
     },
-    "num_active_appointments": 1,
-    "num_appointments": 1,
-    "num_cancelled_appointments": 0,
+    "num_active_bookings": 1,
+    "num_bookings": 1,
+    "num_cancelled_bookings": 0,
     "start_date": "2020-12-01T05:16:30.716Z",
     "status": "active",
     "updated_at": "2020-12-08T20:38:05.030Z"

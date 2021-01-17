@@ -4,7 +4,7 @@ description: Reverts the status from published to draft.
 
 # Convert a Resource to draft
 
-{% api-method method="post" host="https://api.overbooked.io" path="/resources/:booking\_block\_id/convert-draft" %}
+{% api-method method="post" host="https://api.overbooked.io" path="/resources/:resource\_id/convert-draft" %}
 {% api-method-summary %}
 public.resource.convertToDraft
 {% endapi-method-summary %}
@@ -16,7 +16,7 @@ public.resource.convertToDraft
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="booking\_block\_id" type="string" required=true %}
+{% api-method-parameter name="resource\_id" type="string" required=true %}
 Unique identifier of the Resource
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -44,10 +44,10 @@ Bearer `{secret_key}`
     "id": "e4e2af17-bc74-483e-9b17-53cbcf907ac4",
     "metadata": {},
     "name": "test_1",
-    "num_active_appointments": 7,
-    "num_appointments": 7,
+    "num_active_bookings": 7,
+    "num_bookings": 7,
     "num_available_slots": 0,
-    "num_cancelled_appointments": 0,
+    "num_cancelled_bookings": 0,
     "num_slots": 7,
     "short_id": "ajdCcXlwTHd",
     "status": "draft",

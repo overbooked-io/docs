@@ -64,12 +64,12 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E043 | 422 | Metadata invalid key format. Only string allowed |
 | E044 | 422 | Slot is not lockable |
 | E045 | 422 | Slot is already locked |
-| E046 | 422 | Slot capacity invalid. There are active appointments assigned to this slot |
+| E046 | 422 | Slot capacity invalid. There are active bookings assigned to this slot |
 | E047 | 400 | Slot capacity invalid |
-| E048 | 404 | Appointment not found |
-| E049 | 422 | Cannot book appointment, not enough slot capacity |
-| E050 | 422 | Cannot book appointment, slot locked |
-| E051 | 422 | Cannot book appointment, slot disabled |
+| E048 | 404 | Booking not found |
+| E049 | 422 | Cannot book booking, not enough slot capacity |
+| E050 | 422 | Cannot book booking, slot locked |
+| E051 | 422 | Cannot book booking, slot disabled |
 | E052 | 404 | Resource not found |
 | E053 | 403 | Environment is deactivated |
 | E054 | 403 | Organization is blocked |
@@ -78,6 +78,6 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E057 | 401 | Unauthorized, no access to given resource |
 | E058 | 422 | The booking\_disabled\_before property should be higher than 0 |
 | E059 | 403 | Slot cannot be unlocked, lock\_key invalid |
-| E060 | 422 | Slot cannot be deleted due to existing appointments assigned to it |
-| E061 | 422 | Cannot book appointment, resource is not published |
+| E060 | 422 | Slot cannot be deleted due to existing bookings assigned to it |
+| E061 | 422 | Cannot book booking, resource is not published |
 

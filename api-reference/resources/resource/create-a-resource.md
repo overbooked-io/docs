@@ -1,7 +1,7 @@
 ---
 description: >-
   Creates new Resource object, that can be used to create Slots and
-  Appointments within it.
+  Bookings within it.
 ---
 
 # Create a Resource
@@ -56,10 +56,10 @@ Set of key-value data that you can attach to the object
       "foo": "bar"
     },
     "name": "test",
-    "num_active_appointments": 0,
-    "num_appointments": 0,
+    "num_active_bookings": 0,
+    "num_bookings": 0,
     "num_available_slots": 0,
-    "num_cancelled_appointments": 0,
+    "num_cancelled_bookings": 0,
     "num_slots": 0,
     "short_id": "aG91djROSzM",
     "status": "draft",
