@@ -33,7 +33,7 @@ curl https://api.overbooked.io/resources?limit=20&page=1 \
     -H 'Authorization: Bearer <api_key>'
 ```
 
-```scheme
+```javascript
 {
   "data": [
     {

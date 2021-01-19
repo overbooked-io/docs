@@ -19,7 +19,7 @@ Metadata is useful for storing additional, structured information on an object. 
 ### Example
 
 {% code title="Metadata on Booking" %}
-```scheme
+```javascript
 {
   "_object": "booking",
   "id": "4c305fb5-6673-4df3-9f97-c7597fa86ffc",
