@@ -13,7 +13,7 @@ description: >-
 https://api.overbooked.io
 ```
 
-### Client libraries
+### SDK libraries
 
 * Javascript/Node.js - [https://github.com/overbooked-io/overbooked-js](https://github.com/overbooked-io/overbooked-js)
 
