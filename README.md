@@ -15,7 +15,7 @@ https://api.overbooked.io
 
 ### Client libraries
 
-* Javascript/Node.js - [https://github.com/overbooked-io/overbooked-js](https://github.com/overbooked-io/overbooked-client-js)
+* Javascript/Node.js - [https://github.com/overbooked-io/overbooked-js](https://github.com/overbooked-io/overbooked-js)
 
 ### Getting started
 
