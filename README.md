@@ -7,17 +7,17 @@ description: >-
 
 # Introduction
 
-### Base URL
+## Base URL
 
 ```scheme
 https://api.overbooked.io
 ```
 
-### SDK libraries
+## SDK libraries
 
 * Javascript/Node.js - [https://github.com/overbooked-io/overbooked-js](https://github.com/overbooked-io/overbooked-js)
 
-### Getting started
+## Getting started
 
 {% page-ref page="api-reference/authentication.md" %}
 
@@ -30,6 +30,4 @@ https://api.overbooked.io
 {% page-ref page="api-reference/metadata.md" %}
 
 {% page-ref page="api-reference/api-resources/" %}
-
-
 
