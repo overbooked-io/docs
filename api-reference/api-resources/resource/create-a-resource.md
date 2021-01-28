@@ -76,3 +76,20 @@ Set of key-value data that you can attach to the object
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
+{% tabs %}
+{% tab title="Javascript/Node.js" %}
+```javascript
+const overbooked = new Overbooked.Client({ ... })
+
+const { data, error, meta, success } = await overbooked.resource.create({
+    name: "resource",
+    timezone: "Europe/Warsaw"
+  })
+
+console.log(data) // created resource
+```
+{% endtab %}
+{% endtabs %}
+

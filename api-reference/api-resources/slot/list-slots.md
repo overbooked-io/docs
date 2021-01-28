@@ -114,10 +114,12 @@ The Resource’s id \(uuid\)
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const { data, error, meta, success } = await overbooked.slot.list({
-  page: 1,
-  limit: 50
-})
+const { data, error, meta, success } = await overbooked.slot.list([
+  {
+    page: 1,
+    limit: 50
+  }
+])
 
 console.log(data) // list of slots
 ```

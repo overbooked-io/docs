@@ -87,3 +87,22 @@ A flag indicating whether the Slot can be locked.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="Javascript/Node.js" %}
+```javascript
+const overbooked = new Overbooked.Client({ ... })
+
+const { data, error, meta, success } = await overbooked.slot.create([
+  {
+    resource_id: "51b4c36b-d758-4fce-b8fe-0ca78f8dcbe0",
+    start_date: new Date("2020-12-19T15:00:00.000Z"),
+    end_date: new Date("2020-12-19T15:30:00.000Z"),
+    capacity: 1
+  }
+])
+
+console.log(data) // created slots
+```
+{% endtab %}
+{% endtabs %}
+

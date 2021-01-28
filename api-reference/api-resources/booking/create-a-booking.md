@@ -65,3 +65,17 @@ Set of key-value data that you can attach to the Booking
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="JavaScript/Node.js" %}
+```javascript
+const overbooked = new Overbooked.Client({ ... })
+
+const { data, error, meta, success } = await overbooked.booking.create({
+    slot_id: "21ac36b-d758-4fce-b8fe-0ca7vf8dabe0"
+})
+    
+console.log(data) // created booking
+```
+{% endtab %}
+{% endtabs %}
+

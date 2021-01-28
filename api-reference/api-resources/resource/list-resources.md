@@ -99,3 +99,20 @@ Number of items to return per page
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="Javascript/Node.js" %}
+```javascript
+const overbooked = new Overbooked.Client({ ... })
+
+const { data, error, meta, success } = await overbooked.resource.list([
+{
+  page: 1,
+  limit: 50
+}
+])
+
+console.log(data) // list of resources
+```
+{% endtab %}
+{% endtabs %}
+

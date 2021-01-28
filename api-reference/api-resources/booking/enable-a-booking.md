@@ -57,3 +57,17 @@ Bearer `{public_key|secret_key}`
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="Javascript/Node.js" %}
+```javascript
+const overbooked = new Overbooked.Client({ ... })
+
+const { data, error, meta, success } = await overbooked.booking.enable({
+  booking_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0"
+})
+
+console.log(data) // enabled booking
+```
+{% endtab %}
+{% endtabs %}
+

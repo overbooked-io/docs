@@ -75,3 +75,19 @@ A unique, random string used to distinguish a lock. The lock key should be passe
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% tabs %}
+{% tab title="Javascript/Node.js" %}
+```javascript
+const overbooked = new Overbooked.Client({ ... })
+
+const { data, error, meta, success } = await overbooked.slot.lock({
+  slot_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
+  lock_until: new Date("2020-12-19T15:00:00.000Z"),
+  lock_key: "lock_key_1234"
+})
+
+console.log(data) // locked slot
+```
+{% endtab %}
+{% endtabs %}
+
