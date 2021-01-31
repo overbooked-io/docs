@@ -95,11 +95,11 @@ The number of items to return per page.
 const overbooked = new Overbooked.Client({ ... })
 
 const { data, error, meta, success } = await overbooked.booking.list({
+  page: 1,
+  limit: 50,
   status: "cancelled",
   slot_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
-  resource_id: "2ab23c3ab-f458-49ce-b8fe-0ca48f8abebe0",
-  page: 1,
-  limit: 50
+  resource_id: "2ab23c3ab-f458-49ce-b8fe-0ca48f8abebe0"
 })
 
 console.log(data) // list of bookings

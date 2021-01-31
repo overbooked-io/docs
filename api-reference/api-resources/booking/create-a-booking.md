@@ -71,12 +71,13 @@ Set of key-value data that you can attach to the Booking
 const overbooked = new Overbooked.Client({ ... })
 
 const { data, error, meta, success } = await overbooked.booking.create({
-    slot_id: "21ac36b-d758-4fce-b8fe-0ca7vf8dabe0",
-    lock_key: "lock_key_1234",
-    metadata: {
-      foo: "bar"
+  slot_id: "21ac36b-d758-4fce-b8fe-0ca7vf8dabe0",
+  lock_key: "lock_key_1234",
+  metadata: {
+    foo: "bar"
     }
-})
+  }
+)
     
 console.log(data) // created booking
 ```
