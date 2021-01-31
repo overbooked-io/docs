@@ -68,11 +68,13 @@ The Slot's id that Booking is being rescheduled to.
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const { data, error, meta, success } = await overbooked.booking.reschedule({
-  booking_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
-  target_slot_id: "67b2c36a-fg12-4fce-b8fe-0ca45fadcbe0"
-})
-
+const { data, error, meta, success } = await overbooked.booking.reschedule(
+  "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
+  {
+    target_slot_id: "67b2c36a-fg12-4fce-b8fe-0ca45fadcbe0"
+  }
+)
+ 
 console.log(data) // recheduled booking
 ```
 {% endtab %}

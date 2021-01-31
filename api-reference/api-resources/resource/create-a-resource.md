@@ -84,9 +84,12 @@ Set of key-value data that you can attach to the object
 const overbooked = new Overbooked.Client({ ... })
 
 const { data, error, meta, success } = await overbooked.resource.create({
-    name: "resource",
-    timezone: "Europe/Warsaw"
-  })
+  name: "Test Resource",
+  timezone: "Europe/Warsaw",
+  metadata: {
+    foo: "bar"
+  }
+})
 
 console.log(data) // created resource
 ```

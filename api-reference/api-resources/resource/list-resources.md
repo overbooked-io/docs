@@ -104,12 +104,12 @@ Number of items to return per page
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const { data, error, meta, success } = await overbooked.resource.list([
-  {
-    page: 1,
-    limit: 50
-  }
-])
+const { data, error, meta, success } = await overbooked.resource.list({
+  page: 1,
+  limit: 50,
+  name: "Test Resource",
+  status: "draft"
+})
 
 console.log(data) // list of resources
 ```

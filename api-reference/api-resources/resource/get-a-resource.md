@@ -69,9 +69,9 @@ Bearer `{public_key|secret_key}`
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const { data, error, meta, success } = await overbooked.resource.get({
-  resource_id: "2ab23c3ab-f458-49ce-b8fe-0ca48f8abebe0"
-})
+const { data, error, meta, success } = await overbooked.resource.get(
+  "2ab23c3ab-f458-49ce-b8fe-0ca48f8abebe0"
+)
 
 console.log(data) // requested reasource
 ```

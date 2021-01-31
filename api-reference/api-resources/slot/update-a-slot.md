@@ -94,9 +94,18 @@ The maximum amount of active Bookings that the Slot can contain.
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const { data, error, meta, success } = await overbooked.slot.update({
-  slot_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0"
-})
+const { data, error, meta, success } = await overbooked.slot.update(
+  "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
+  {
+    start_date: new Date("2020-12-19T15:00:00.000Z"),
+    end_date: new Date("2020-12-19T15:30:00.000Z"),
+    lockable: true,
+    capacity: 1,
+    metadata: {
+      foo: "bar"
+    }
+  }
+)
 
 console.log(data) // updated slot
 ```

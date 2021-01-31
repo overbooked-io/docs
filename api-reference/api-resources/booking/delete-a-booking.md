@@ -53,9 +53,9 @@ Bearer `{secret_key}`
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const {error, meta, success } = await overbooked.slot.delete({
-  booking_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0"
-})
+const { error, meta, success } = await overbooked.slot.delete(
+  "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0"
+)
 ```
 {% endtab %}
 {% endtabs %}

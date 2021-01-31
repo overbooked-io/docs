@@ -76,10 +76,12 @@ A unique, random string used to distinguish a lock, provided during locking oper
 ```javascript
 const overbooked = new Overbooked.Client({ ... })
 
-const { data, error, meta, success } = await overbooked.slot.unlock({
-  slot_id: "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
-  lock_key: "lock_key_4321"
-})
+const { data, error, meta, success } = await overbooked.slot.unlock(
+  "21b2c36b-f458-4fce-b8fe-0ca48f8dcbe0",
+  {
+    lock_key: "lock_key_4321"
+  }
+)
 
 console.log(data) // unlocked slot
 ```
