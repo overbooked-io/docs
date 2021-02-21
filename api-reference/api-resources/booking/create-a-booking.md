@@ -75,7 +75,6 @@ const { data, error, meta, success } = await overbooked.booking.create({
   lock_key: "lock_key_1234",
   metadata: {
     foo: "bar"
-    }
   }
 )
     
