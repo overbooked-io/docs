@@ -36,23 +36,24 @@ The response from the API may contain four fields:`data`, `meta`, `error` and `s
 ```javascript
 {
   "data": {
-    "available": false,
-    "resource_id": "c5034ce4-d84e-4765-95e2-af5fc70e329c",
+    "_object": "slot",
+    "available": true,
+    "resource_id": "5b003c67-f69f-471b-9268-3896a9a3df29",
     "capacity": 1,
-    "created_at": "2020-12-01T05:06:30.729Z",
-    "end_date": "2020-12-01T05:26:30.717Z",
-    "id": "de9f1f1e-1436-4f90-9658-c7d5c7009c38",
+    "created_at": "2020-12-19T15:44:22.854Z",
+    "end_date": "2020-10-21T22:50:00+02:00",
+    "id": "3751095a-b4ef-41a3-98a3-b8a0eecfc332",
     "lockable": true,
     "locked_until": null,
     "metadata": {
       "user_email": "john.doe@example.com"
-    },
-    "num_active_bookings": 1,
-    "num_bookings": 1,
+    }
+    "num_active_bookings": 0,
+    "num_bookings": 0,
     "num_cancelled_bookings": 0,
-    "start_date": "2020-12-01T05:16:30.716Z",
+    "start_date": "2020-10-21T22:30:00+02:00",
     "status": "active",
-    "updated_at": "2020-12-08T20:38:05.030Z"
+    "updated_at": "2020-12-19T15:44:22.854Z"
   },
   "meta": {},
   "success": true

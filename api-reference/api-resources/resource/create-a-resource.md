@@ -24,7 +24,6 @@ Bearer `{secret_key}`
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-
 {% api-method-parameter name="name" type="string" required=true %}
 The Resource’s name, meant to be displayable publicly
 {% endapi-method-parameter %}
@@ -86,8 +85,6 @@ A flag indicating whether the Slots can be scheduled publicly via API.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% tabs %}
 {% tab title="Javascript/Node.js" %}
