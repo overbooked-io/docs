@@ -45,6 +45,14 @@ The output timezone for all timestamps in the Resource
 {% api-method-parameter name="name" type="string" required=false %}
 The Resource’s name
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="scheduling\_default\_rule" type="string" required=false %}
+A default behaviour of scheduling Slots via API. The default rule is either `allow` or `disallow`.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="public\_scheduling\_enabled" type="boolean" required=false %}
+A flag indicating whether the Slots can be scheduled publicly via API.
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
