@@ -65,6 +65,8 @@ Number of items to return per page
       "short_id": "ajdCcXlwTHd",
       "status": "published",
       "timezone": "Europe/Warsaw",
+      "public_scheduling_enabled": false,
+      "scheduling_default_rule": "allow",
       "updated_at": "2020-12-10T18:55:08.822Z"
     },
     {
@@ -82,6 +84,8 @@ Number of items to return per page
       "short_id": "M2I2alhJbDl",
       "status": "published",
       "timezone": "Europe/Warsaw",
+      "public_scheduling_enabled": false,
+      "scheduling_default_rule": "allow",
       "updated_at": "2020-12-10T18:55:08.949Z"
     }
   ],

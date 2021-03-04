@@ -52,6 +52,8 @@ Bearer `{secret_key}`
     "short_id": "ajdCcXlwTHd",
     "status": "draft",
     "timezone": "America/New_York",
+    "public_scheduling_enabled": false,
+    "scheduling_default_rule": "allow",
     "updated_at": "2020-12-12T16:27:47.590Z"
   },
   "meta": {},
