@@ -24,13 +24,6 @@ Bearer `{secret_key}`
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="scheduling\_default\_rule" type="string" required=false %}
-A default behaviour of scheduling Slots via API. The default rule is either `allow` or `disallow`.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="public\_scheduling\_enabled" type="boolean" required=false %}
-A flag indicating whether the Slots can be scheduled publicly via API.
-{% endapi-method-parameter %}
 
 {% api-method-parameter name="name" type="string" required=true %}
 The Resource’s name, meant to be displayable publicly
@@ -42,6 +35,14 @@ The output timezone for all timestamps in the Resource
 
 {% api-method-parameter name="metadata" type="object" required=false %}
 Set of key-value data that you can attach to the object
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="scheduling\_default\_rule" type="string" required=false %}
+A default behaviour of scheduling Slots via API. The default rule is either `allow` or `disallow`.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="public\_scheduling\_enabled" type="boolean" required=false %}
+A flag indicating whether the Slots can be scheduled publicly via API.
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
