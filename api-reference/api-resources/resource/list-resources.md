@@ -66,7 +66,6 @@ Number of items to return per page
       "status": "published",
       "timezone": "Europe/Warsaw",
       "public_scheduling_enabled": false,
-      "scheduling_default_rule": "allow",
       "updated_at": "2020-12-10T18:55:08.822Z"
     },
     {
@@ -85,7 +84,6 @@ Number of items to return per page
       "status": "published",
       "timezone": "Europe/Warsaw",
       "public_scheduling_enabled": false,
-      "scheduling_default_rule": "allow",
       "updated_at": "2020-12-10T18:55:08.949Z"
     }
   ],

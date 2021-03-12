@@ -55,7 +55,6 @@ Bearer `{secret_key}`
     "status": "published",
     "timezone": "America/New_York",
     "public_scheduling_enabled": false,
-    "scheduling_default_rule": "allow",
     "updated_at": "2020-12-12T16:27:47.590Z"
   },
   "meta": {},

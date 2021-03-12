@@ -46,10 +46,6 @@ The output timezone for all timestamps in the Resource
 The Resource’s name
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="scheduling\_default\_rule" type="string" required=false %}
-A default behaviour of scheduling Slots via API. The default rule is either `allow` or `disallow`.
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="public\_scheduling\_enabled" type="boolean" required=false %}
 A flag indicating whether the Slots can be scheduled publicly via API.
 {% endapi-method-parameter %}
@@ -81,7 +77,6 @@ A flag indicating whether the Slots can be scheduled publicly via API.
     "status": "published",
     "timezone": "America/New_York",
     "public_scheduling_enabled": false,
-    "scheduling_default_rule": "allow",
     "updated_at": "2020-12-12T16:27:47.590Z"
   },
   "meta": {},

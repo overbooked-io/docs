@@ -25,7 +25,6 @@ You can also use [`metadata`](../../metadata.md) property to store data that ref
 | `num_available_slots` | integer | A number of all available [Slots](../slot/) \(available to book\) created within the Resource. |
 | `booking_disabled_before` | integer | The number of seconds before the [Slot](../slot/) starts when the booking option is disabled. |
 | `public_scheduling_enabled` | boolean | A flag indicating whether the Slots can be scheduled publicly via API. \(default: `false`\) |
-| `scheduling_default_rule` | string | A default behaviour of scheduling Slots via API. The default rule is either `allow` or `disallow`. It is valid only if `public_scheduling_enabled` is set to true. \(default: `allow`\) |
 | `updated_at` | date | The date at which the object was last updated, in UTC in ISO 8601. |
 | `created_at` | date | The date at which the object was created, in UTC in ISO 8601. |
 
@@ -48,7 +47,6 @@ You can also use [`metadata`](../../metadata.md) property to store data that ref
   "num_slots": 7,
   "booking_disabled_before": 0,
   "public_scheduling_enabled": false,
-  "scheduling_default_rule": "allow",
   "updated_at": "2020-12-10T18:55:08.822Z",
   "created_at": "2020-12-10T18:55:08.749Z"
 }

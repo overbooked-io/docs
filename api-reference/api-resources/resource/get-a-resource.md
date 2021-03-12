@@ -53,7 +53,6 @@ Bearer `{public_key|secret_key}`
     "status": "published",
     "timezone": "Europe/Warsaw",
     "public_scheduling_enabled": false,
-    "scheduling_default_rule": "allow",
     "updated_at": "2020-12-10T18:55:08.822Z"
   },
   "meta": {},

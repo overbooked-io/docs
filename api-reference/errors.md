@@ -54,9 +54,5 @@ Below is a list of possible error codes that can be returned, along with an addi
 | E060 | 422 | Slot cannot be deleted due to existing Bookings assigned to it |
 | E061 | 422 | Cannot create a Booking, a Resource is not published |
 | E062 | 429 | API rate-limit reached |
-| E063 | 422 | Scheduling Rule name invalid |
-| E064 | 422 | Scheduling Rule type invalid |
-| E065 | 422 | Scheduling Rule data invalid |
 | E066 | 422 | Resource public\_scheduling\_enabled should be boolean |
-| E067 | 422 | Resource scheduling\_default\_rule should be one of \['allow', 'disallow'\] |
 
